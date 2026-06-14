@@ -1,60 +1,197 @@
-<!DOCTYPE html><html lang="de"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Die Lücke zwischen Agentic AI und Unternehmensrealität - Ugur Tarlig</title><meta name="description" content="Was rund 40 lauffähige Tools und 1.500 Commits über die eigentliche KI-Adoptionslücke zeigen: Nicht das Modell ist der Engpass, sondern Problemverständnis, Governance, Messbarkeit und kontrollierte Umsetzung."><link rel="canonical" href="https://tarlig.com/blog/agentic-ai-unternehmen-luecke"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="article"><meta property="og:title" content="Die Lücke zwischen Agentic AI und Unternehmensrealität - Ugur Tarlig"><meta property="og:description" content="Was rund 40 lauffähige Tools und 1.500 Commits über die eigentliche KI-Adoptionslücke zeigen: Nicht das Modell ist der Engpass, sondern Problemverständnis, Governance, Messbarkeit und kontrollierte Umsetzung."><meta property="og:url" content="https://tarlig.com/blog/agentic-ai-unternehmen-luecke"><meta property="og:image" content="https://tarlig.com/og/token-economy-cost-control.webp"><meta property="article:published_time" content="2026-06-14T00:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;b891ec1558374a70a5b585ca6d5d9f49&quot;}"></script><link rel="stylesheet" href="/_astro/BaseLayout.BeLEdBXY.css"></head> <body> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="Ugur Tarlig Startseite"> <span class="brand-mark" aria-hidden="true">UT</span> <span class="brand-text">Ugur Tarlig</span> </a> <nav class="site-nav" aria-label="Hauptnavigation"> <a href="/#work">Arbeit</a><a href="/#track-record">Erfahrung</a><a href="/blog">Blog</a><a href="/#contact">Kontakt</a> </nav> </div> </header> <main>  <article class="container narrow-page"> <p class="eyebrow">14. Juni 2026</p> <h1>Die Lücke zwischen Agentic AI und Unternehmensrealität</h1> <img class="post-hero" src="/og/token-economy-cost-control.webp" alt="" loading="eager"> <p>Rund 40 lauffähige Tools. Rund 1.500 Commits. Fünf Tech-Stacks. Fünf Monate — abends.</p>
-<p>Nicht, weil ich plötzlich fünfmal schneller tippe.</p>
-<p>Sondern weil ich mit agentischen Workflows arbeite: Systeme, die Aufgaben planen, ausführen, prüfen, korrigieren und in Schleifen weiterarbeiten, bis ein brauchbares Ergebnis entsteht.</p>
+<!DOCTYPE html><html lang="de"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Die Lücke zwischen Agentic AI und Unternehmensrealität - Ugur Tarlig</title><meta name="description" content="Was rund 40 selbstgebaute Werkzeuge über die eigentliche KI-Adoptionslücke zeigen: Nicht das Modell ist der Engpass, sondern Problemverständnis, Verantwortung, Governance, Messbarkeit und kontrollierte Umsetzung."><link rel="canonical" href="https://tarlig.com/blog/agentic-ai-unternehmen-luecke"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="article"><meta property="og:title" content="Die Lücke zwischen Agentic AI und Unternehmensrealität - Ugur Tarlig"><meta property="og:description" content="Was rund 40 selbstgebaute Werkzeuge über die eigentliche KI-Adoptionslücke zeigen: Nicht das Modell ist der Engpass, sondern Problemverständnis, Verantwortung, Governance, Messbarkeit und kontrollierte Umsetzung."><meta property="og:url" content="https://tarlig.com/blog/agentic-ai-unternehmen-luecke"><meta property="og:image" content="https://tarlig.com/og/token-economy-cost-control.webp"><meta property="article:published_time" content="2026-06-14T00:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;b891ec1558374a70a5b585ca6d5d9f49&quot;}"></script><link rel="stylesheet" href="/_astro/BaseLayout.BeLEdBXY.css"></head> <body> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="Ugur Tarlig Startseite"> <span class="brand-mark" aria-hidden="true">UT</span> <span class="brand-text">Ugur Tarlig</span> </a> <nav class="site-nav" aria-label="Hauptnavigation"> <a href="/#work">Arbeit</a><a href="/#track-record">Erfahrung</a><a href="/blog">Blog</a><a href="/#contact">Kontakt</a> </nav> </div> </header> <main>  <article class="container narrow-page"> <p class="eyebrow">14. Juni 2026</p> <h1>Die Lücke zwischen Agentic AI und Unternehmensrealität</h1> <img class="post-hero" src="/og/token-economy-cost-control.webp" alt="" loading="eager"> <p>Rund 40 Werkzeuge in fünf Monaten. Abends. Allein gebaut.</p>
+<p>Einige davon nutze ich täglich. Andere laufen still als Dienst im Hintergrund. Manche sind Experimente, andere sind inzwischen echte Arbeitswerkzeuge.</p>
+<p>Nicht als Sammlung von Demos, sondern über sehr unterschiedliche Arbeitsbereiche hinweg: Mail-Automation, Dokumenten-RAG, Wissensmanagement, native Apps, Server-Dienste, Orchestrierung und Observability.</p>
+<p>Vor zwei Jahren hätte diese Bandbreite nach einem kleinen Produktteam geklungen: Produktverständnis, Backend, Frontend, Infrastruktur, Testing, Dokumentation, Betrieb.</p>
+<p>Heute fallen diese Rollen nicht einfach weg. Aber ihre Grenzen verschieben sich.</p>
+<ul>
+<li>Product Owner bauen Prototypen.</li>
+<li>Entwickler schreiben PRDs, Testfälle und Dokumentation.</li>
+<li>Fachbereiche testen Ideen direkt am System.</li>
+<li>Infrastruktur, Betrieb und Monitoring werden Teil desselben Workflows.</li>
+</ul>
+<p>Der Punkt ist nicht, dass eine Person plötzlich ein ganzes Produktteam ersetzt.</p>
+<p>Der Punkt ist, dass sich die Schleife zwischen Problem, Lösung, Test und Betrieb massiv verkürzt hat.</p>
+<p>Agentische Workflows helfen dabei, Aufgaben zu planen, umzusetzen, zu prüfen und nachzubessern — nicht einmalig, sondern in Schleifen, bis ein brauchbares Ergebnis entsteht.</p>
+<p>Was früher Wochen oder Monate gedauert hätte, entsteht heute oft in Tagen oder Wochen als erste belastbare Version.</p>
 <p>Das ist keine Heldengeschichte.</p>
 <p>Es ist ein Signal dafür, wie groß die Lücke inzwischen geworden ist.</p>
-<p>Denn viele der Tools, die dabei entstanden sind, sehen Aufgaben verdächtig ähnlich, die Unternehmen heute noch manuell erledigen:</p>
-<ul>
-<li>E-Mail-Triage und First-Level-Support.</li>
-<li>Dokumenten-Self-Service per RAG — mit Quellenangaben.</li>
-<li>Automatische Dokumentation: aus Code und Notizen werden gepflegte Wiki-Seiten.</li>
-<li>Agentische Pipelines: scannen, bewerten, generieren, tracken.</li>
-<li>Relevante Zusammenfassungen aus E-Mails, Dokumenten, News und internen Quellen.</li>
-<li>KI, die aus E-Mails, Notizen und Dokumenten konkrete Aufgaben, Tickets oder nächste Schritte ableitet.</li>
-</ul>
+<h2 id="was-heute-möglich-ist">Was heute möglich ist</h2>
+<p>Viele der Tools, die dabei entstanden sind, sehen Aufgaben verdächtig ähnlich, die Unternehmen heute noch manuell erledigen:</p>
+<h3 id="e-mail-triage-und-eingangsbearbeitung">E-Mail-Triage und Eingangsbearbeitung</h3>
+<p>Ein Werkzeug liest meinen Posteingang, erkennt relevante Nachrichten und übersetzt das Wichtige in konkrete Aufgaben. Es erkennt, was zu tun ist, extrahiert Kontext und legt Aufgaben automatisch per API in meiner Task-App an.</p>
+<h3 id="dokumenten-self-service-und-wissensmanagement">Dokumenten-Self-Service und Wissensmanagement</h3>
+<p>RAG über Projekt- und Wissensdokumente: Fragen in natürlicher Sprache, Antworten mit Quellenangaben. Statt dass Wissen in Ordnern, Wikis oder Postfächern versauert, wird es abfragbar.</p>
+<h3 id="automatische-dokumentation-und-anleitungen">Automatische Dokumentation und Anleitungen</h3>
+<p>Aus Stichpunkten, Code oder Notizen entstehen Wiki-Seiten, Tutorials und technische Dokumentation. Also genau die Dokumentation, von der alle wissen, dass sie wichtig ist — und die trotzdem oft niemand schreibt.</p>
+<h3 id="agentische-pipelines">Agentische Pipelines</h3>
+<p>Workflows, die Quellen scannen, Informationen bewerten, Inhalte generieren und Ergebnisse tracken. Nicht nur “Antworten geben”, sondern Arbeitsschritte koordinieren.</p>
+<h3 id="attention-filtering-und-zusammenfassungen">Attention-Filtering und Zusammenfassungen</h3>
+<p>Aus Hunderten Artikeln, E-Mails und Quellen entsteht eine kurze, relevante Übersicht: Was ist wichtig? Was betrifft mich? Was kann ich ignorieren?</p>
+<h3 id="server--und-infrastruktur-automatisierung">Server- und Infrastruktur-Automatisierung</h3>
+<p>Setup, Betrieb, Dokumentation, Monitoring und wiederkehrende Wartungsschritte — Dinge, die sonst viel manuelle Arbeit erzeugen.</p>
+<p>Und darunter liegt die eigentlich spannende Schicht: ein Orchestrator, der mehrere Agenten koordiniert, bis eine Aufgabe erledigt ist.</p>
+<p>Das Ganze läuft auf eigener Infrastruktur, erreichbar über eine gesicherte Oberfläche, über die ich viele persönliche Workflows automatisiere. Eine Art persönliches “Life OS” — aber unter eigener Kontrolle: eigene Infrastruktur, authentifizierter Zugang, eigene Datenhaltung.</p>
+<p>Dazu kommt eine Observability-Schicht, die Token-Verbrauch und Kosten sichtbar macht.</p>
+<p>Das ist nicht einfach: “Ich nutze ein KI-Tool.”</p>
+<p>Das ist eine Steuerungsebene für Arbeit.</p>
+<p>Und genau an dieser Ebene hängt in Unternehmen die eigentliche Adoption.</p>
+<h2 id="die-lücke-ist-selten-die-technologie">Die Lücke ist selten die Technologie</h2>
 <p>Das ist die eine Welt: was heute möglich ist.</p>
 <p>Die andere Welt ist das, was in vielen Unternehmen tatsächlich ankommt.</p>
 <p>Und dazwischen liegt meistens kein Technologie-Gap.</p>
-<p>Dazwischen liegen andere Dinge.</p>
-<h2 id="domänen--und-problemverständnis">Domänen- und Problemverständnis</h2>
-<p>Bevor man entscheidet, KI in einem Bereich einzusetzen, muss man verstehen, welches Problem überhaupt gelöst werden soll.</p>
-<p>Wie arbeitet der Bereich wirklich? Wo entstehen Wartezeiten, Fehler, Medienbrüche oder Doppelarbeit? Welche Entscheidungen sind kritisch? Welche Daten sind verlässlich? Was sollte automatisiert werden — und was besser nicht?</p>
-<p>Ich habe das selbst erlebt: Die technische Umsetzung war nicht der Startpunkt. Der lange Teil war, eine Fachdomäne tief genug zu verstehen, um daraus überhaupt eine sinnvolle Plattform für eine Fachabteilung skizzieren zu können.</p>
-<p>KI ist kein Startpunkt.</p>
-<p>KI ist ein möglicher Lösungsbaustein.</p>
-<p>Der Startpunkt ist ein scharf verstandenes Problem.</p>
-<h2 id="technologieverständnis">Technologieverständnis</h2>
-<p>Viele Entscheider kennen KI vor allem als Chatbot. Bestenfalls lautet die Strategie: “Wir sollten ChatGPT einführen.”</p>
-<p>Aber agentische Systeme sind keine bessere Suchmaschine. Sie können Arbeit vorbereiten, strukturieren, ausführen, prüfen und koordinieren.</p>
-<p>Wer das nicht versteht, sieht auch die Use Cases nicht.</p>
-<h2 id="governance">Governance</h2>
-<p>Welche Daten dürfen verwendet werden? Welche Quellen sind belastbar? Welche Aktionen darf ein Agent ausführen? Wo braucht es Human-in-the-loop?</p>
-<p>Governance darf nicht heißen: “Wir verbieten alles.”</p>
-<p>Governance muss heißen: “Wir gestalten Systeme so, dass sie sicher nutzbar sind.”</p>
-<h2 id="messbarkeit">Messbarkeit</h2>
-<p>Adoption passiert nicht, weil ein Tool verfügbar ist.</p>
-<p>Sie passiert, wenn Teams merken: Diese Arbeit geht jetzt spürbar besser.</p>
-<p>Also braucht es konkrete Fragen:</p>
+<p>Die Modelle werden besser. Die Tools werden zugänglicher. Die Infrastruktur wird verfügbarer. APIs, RAG, Agenten, lokale Modelle, Cloud-Angebote, Orchestrierung, Observability — vieles davon ist heute schon real einsetzbar.</p>
+<p>Trotzdem bleibt KI in vielen Organisationen ein Pilotprojekt am Rand.</p>
 <ul>
-<li>Sind Mitarbeitende 10%, 20% oder 50% schneller?</li>
-<li>Sinkt die Durchlaufzeit?</li>
-<li>Werden Tickets schneller gelöst?</li>
-<li>Fällt Dokumentationsaufwand weg?</li>
-<li>Steigt die Qualität oder Konsistenz der Ergebnisse?</li>
-<li>Wie viel mehr schafft ein Team — bei gleicher Qualität?</li>
+<li>Ein Workshop.</li>
+<li>Ein Chatbot.</li>
+<li>Ein interner Demo-Case.</li>
+<li>Ein “Wir sollten mal ChatGPT einführen”.</li>
+</ul>
+<p>Aber der Sprung in echte, produktive, messbare Workflows bleibt oft aus.</p>
+<p>Warum?</p>
+<p>Weil die eigentlichen Hürden früher beginnen.</p>
+<h2 id="ki-ist-kein-startpunkt">KI ist kein Startpunkt</h2>
+<p>Der wichtigste Punkt kommt noch vor Technologie, Governance oder Kosten:</p>
+<p>KI ist kein Startpunkt. KI ist ein möglicher Lösungsbaustein. Der Startpunkt ist ein scharf verstandenes Problem.</p>
+<p>Wer mit “Wir brauchen KI” anfängt, ist eigentlich schon einen Schritt zu spät.</p>
+<p>Die bessere Frage lautet: Welches Problem wollen wir lösen?</p>
+<ul>
+<li>Wie arbeitet der Bereich wirklich?</li>
+<li>Wo entstehen Wartezeiten?</li>
+<li>Wo entstehen Medienbrüche?</li>
+<li>Wo wird doppelt gearbeitet?</li>
+<li>Welche Entscheidungen sind kritisch?</li>
+<li>Welche Daten sind verlässlich?</li>
+<li>Wo ist Automatisierung sinnvoll — und wo gefährlich?</li>
+<li>Was sollte ein System vorbereiten, was entscheiden, was nur sichtbar machen?</li>
+</ul>
+<p>Das habe ich selbst erlebt, als ich eine GenAI-Plattform für eine Fachabteilung aufgebaut habe.</p>
+<p>Der lange Teil war nicht die technische Umsetzung.</p>
+<p>Der lange Teil war, die Domäne tief genug zu verstehen, um überhaupt zu wissen, welches Problem sich lohnt.</p>
+<p>Erst wenn man die Arbeit wirklich versteht, kann man entscheiden, ob KI überhaupt die richtige Lösung ist. Und falls ja: welche Art von KI?</p>
+<ul>
+<li>Ein Chatbot?</li>
+<li>Ein RAG-System?</li>
+<li>Ein Agent?</li>
+<li>Eine Workflow-Automatisierung?</li>
+<li>Ein Assistenzsystem mit Human-in-the-loop?</li>
+<li>Oder vielleicht erst einmal gar keine KI, sondern bessere Daten, bessere Prozesse oder klarere Verantwortlichkeiten?</li>
+</ul>
+<p>KI löst kein unscharf verstandenes Problem.</p>
+<p>Im schlimmsten Fall skaliert sie nur die Unschärfe.</p>
+<h2 id="technologieverständnis-im-management">Technologieverständnis im Management</h2>
+<p>Der zweite Engpass ist Technologieverständnis.</p>
+<p>Viele Entscheider kennen KI vor allem als Chatbot. Das ist verständlich. Für viele Menschen war ChatGPT der erste echte Kontakt mit generativer KI.</p>
+<p>Aber agentische Systeme sind keine bessere Suchmaschine.</p>
+<p>Sie können Arbeit vorbereiten, strukturieren, ausführen, prüfen und koordinieren. Sie können Tools aufrufen, Daten verarbeiten, Aufgabenketten planen, Zwischenergebnisse bewerten und mit Feedbackschleifen weiterarbeiten.</p>
+<p>Wer KI nur als Chatfenster versteht, sieht diese Use Cases nicht.</p>
+<p>Dann bleibt die Strategie auf der Ebene: “Wir sollten ChatGPT einführen.”</p>
+<p>Das ist zu wenig.</p>
+<p>Nicht, weil ChatGPT unwichtig wäre. Sondern weil der eigentliche Hebel nicht darin liegt, jedem Mitarbeitenden ein weiteres Tool zu geben.</p>
+<p>Der Hebel liegt darin, echte Arbeitsabläufe neu zu denken:</p>
+<ul>
+<li>Welche wiederkehrenden Entscheidungen können vorbereitet werden?</li>
+<li>Welche Dokumente können automatisch erschlossen werden?</li>
+<li>Welche Supportfälle können vorqualifiziert werden?</li>
+<li>Welche Reports müssen nicht mehr manuell entstehen?</li>
+<li>Welche Fachprozesse könnten durch Agenten unterstützt, aber kontrolliert bleiben?</li>
+</ul>
+<p>Dafür braucht Management kein Detailwissen über jedes Modell.</p>
+<p>Aber es braucht ein mentales Modell davon, was diese Systeme können, wo ihre Grenzen liegen und wie sich Arbeit dadurch verändert.</p>
+<h2 id="verantwortung-für-adoption">Verantwortung für Adoption</h2>
+<p>Der dritte Punkt ist Verantwortung.</p>
+<p>In vielen Unternehmen ist niemand wirklich zuständig für KI-Adoption.</p>
+<ul>
+<li>IT stellt vielleicht Tools bereit.</li>
+<li>Fachbereiche haben Ideen.</li>
+<li>Legal und Compliance haben berechtigte Bedenken.</li>
+<li>Management will Innovation sehen.</li>
+<li>Einzelne Teams bauen Piloten.</li>
+</ul>
+<p>Aber wer trägt das Mandat, daraus echte Nutzung zu machen?</p>
+<p>Ohne diese Verantwortung bleibt KI ein Dauer-Pilot.</p>
+<p>Es gibt Begeisterung im Workshop, ein paar gute Demos und vielleicht einzelne Produktivitätsgewinne bei Power-Usern. Aber keine breite Veränderung.</p>
+<p>Adoption bedeutet nicht, ein Tool freizuschalten.</p>
+<p>Adoption bedeutet, Arbeitsweisen zu verändern.</p>
+<p>Das braucht Enablement, klare Use Cases, Training, Support, Erfolgsmessung, Governance und jemanden, der die Umsetzung wirklich treibt.</p>
+<h2 id="governance-ist-kein-verbotsproblem">Governance ist kein Verbotsproblem</h2>
+<p>Governance ist real. Besonders in regulierten Umfeldern.</p>
+<ul>
+<li>Welche Daten dürfen verwendet werden?</li>
+<li>Welche Quellen sind belastbar?</li>
+<li>Welche Aktionen darf ein Agent ausführen?</li>
+<li>Was muss protokolliert werden?</li>
+<li>Wo braucht es Freigaben?</li>
+<li>Wo bleibt der Mensch in der Schleife?</li>
+<li>Was darf lokal laufen, was in der Cloud?</li>
+<li>Welche Ergebnisse müssen nachvollziehbar sein?</li>
+</ul>
+<p>Aber Governance darf nicht bedeuten: “Wir verbieten alles, bis jedes Risiko verschwunden ist.”</p>
+<p>Dann passiert gar nichts.</p>
+<p>Governance muss heißen: “Wir gestalten Systeme so, dass sie sicher nutzbar sind.”</p>
+<p>Das ist ein Design- und Engineering-Problem.</p>
+<ul>
+<li>RAG-Systeme brauchen Quellenangaben.</li>
+<li>Agenten brauchen Berechtigungsgrenzen.</li>
+<li>Produktive Systeme brauchen Logs und Monitoring.</li>
+<li>Kritische Aktionen brauchen Freigaben.</li>
+<li>Datenflüsse müssen nachvollziehbar sein.</li>
+<li>Nutzer müssen verstehen, was ein System kann — und was nicht.</li>
+</ul>
+<p>Gerade im regulierten Umfeld lautet die entscheidende Frage nicht, ob KI-Agenten Workflows übernehmen.</p>
+<p>Sondern wie man sie lokal, compliant, nachvollziehbar und vertrauenswürdig macht.</p>
+<p>Das ist die eigentliche Arbeit.</p>
+<h2 id="messbarkeit-entscheidet-über-adoption">Messbarkeit entscheidet über Adoption</h2>
+<p>Adoption passiert nicht, weil ein Tool verfügbar ist.</p>
+<p>Adoption passiert, wenn Teams merken: Diese Arbeit läuft jetzt spürbar besser.</p>
+<p>Also braucht es Messbarkeit.</p>
+<ul>
+<li>Wie stark sinkt die Durchlaufzeit?</li>
+<li>Wie viele Tickets werden schneller gelöst?</li>
+<li>Wie viel Dokumentationsaufwand fällt weg?</li>
+<li>Wie viele Aufgaben schafft ein Team mehr bei gleicher Qualität?</li>
+<li>Wie schnell werden neue Mitarbeitende produktiv?</li>
+<li>Wie stark steigt die Konsistenz der Ergebnisse?</li>
+<li>Wie viel Zeit gewinnen Experten zurück?</li>
 </ul>
 <p>Ohne Messbarkeit bleibt KI ein Experiment.</p>
 <p>Mit Messbarkeit wird sie ein Steuerungsinstrument.</p>
-<h2 id="cost-control">Cost Control</h2>
-<p>Erst wenn Agenten wirklich genutzt werden, wird Tokenomics relevant.</p>
-<p>Agenten in Loops können Kosten erzeugen. Also braucht es Observability, Usage-Tracking und klare Grenzen.</p>
+<p>Dabei geht es nicht darum, unrealistische Produktivitätsversprechen in den Raum zu stellen. Nicht jede Tätigkeit wird plötzlich 50 Prozent schneller. Nicht jeder Prozess eignet sich gleich gut. Nicht jeder Mensch arbeitet auf dieselbe Weise.</p>
+<p>Aber genau deshalb muss man messen.</p>
+<p>Ein guter KI-Use-Case sollte nicht nur technisch funktionieren. Er sollte zeigen, ob er Arbeit wirklich verbessert.</p>
+<h2 id="cost-control-kommt-später--aber-sie-kommt">Cost Control kommt später — aber sie kommt</h2>
+<p>Cost Control ist wichtig. Aber sie ist oft nicht das erste Problem.</p>
+<p>Viele Unternehmen sind noch gar nicht an dem Punkt, an dem Tokenomics wirklich schmerzt. Nicht, weil Kosten egal wären, sondern weil Agenten noch nicht breit produktiv laufen.</p>
+<p>Sobald das passiert, ändert sich das.</p>
+<ul>
+<li>Agenten in Schleifen erzeugen Kosten.</li>
+<li>Mehr Kontext erzeugt Kosten.</li>
+<li>Tool-Aufrufe erzeugen Kosten.</li>
+<li>Fehlgeschlagene Iterationen erzeugen Kosten.</li>
+<li>Unkontrollierte Automatisierung erzeugt Kosten.</li>
+</ul>
+<p>Deshalb braucht es Observability, Usage-Tracking und klare Grenzen.</p>
+<ul>
+<li>Welche Workflows verbrauchen wie viele Tokens?</li>
+<li>Welche Agenten laufen zu lange?</li>
+<li>Welche Aufgaben sind zu teuer für den Nutzen?</li>
+<li>Wo lohnt sich ein kleineres Modell?</li>
+<li>Wo braucht es Caching, bessere Prompts oder klarere Abbruchbedingungen?</li>
+</ul>
 <p>Ohne Messung keine Steuerung.</p>
-<p>Gerade in regulierten Umfeldern wird die entscheidende Frage nicht sein, ob KI-Agenten Workflows übernehmen.</p>
-<p>Sondern wie man sie lokal, compliant, nachvollziehbar und vertrauenswürdig macht.</p>
+<p>Tokenomics klingt abstrakt, bis ein Agent in einer Schleife läuft und niemand sieht, was passiert.</p>
+<p>Dann wird Observability plötzlich kein Nice-to-have mehr, sondern Voraussetzung.</p>
+<h2 id="der-vorsprung-entsteht-nicht-durch-das-modell">Der Vorsprung entsteht nicht durch das Modell</h2>
 <p>Der Vorsprung entsteht nicht durch das beste Modell.</p>
 <p>Das haben bald alle.</p>
-<p>Der Vorsprung entsteht durch die Fähigkeit, echte Fachprobleme zu verstehen — und agentische Workflows produktiv, kontrolliert und messbar in diese Prozesse zu bringen.</p>
+<p>Die Modelle werden stärker, günstiger und austauschbarer. Der eigentliche Wettbewerbsvorteil liegt nicht darin, Zugriff auf KI zu haben.</p>
+<p>Er liegt darin, echte Fachprobleme zu verstehen — und agentische Workflows produktiv, kontrolliert und messbar in diese Prozesse zu bringen.</p>
+<p>Das ist der Unterschied zwischen KI als Spielerei und KI als Betriebssystem für Arbeit.</p>
+<p>Nicht ein einzelner Chatbot.</p>
+<p>Nicht ein Pilotprojekt.</p>
+<p>Nicht ein Innovationsworkshop.</p>
+<p>Sondern eine neue Steuerungsebene für Wissen, Entscheidungen und Workflows.</p>
 <p>Die Unternehmen, die diese Lücke zuerst schließen, sind nicht ein Feature voraus.</p>
 <p>Sie sind einen ganzen Zyklus voraus.</p>
-<p>Nicht irgendwann. Jetzt.</p>
-<p>Was bremst KI-Adoption bei euch am meisten: Problemverständnis, Technologieverständnis, Governance, Messbarkeit — oder Kosten?</p> </article>  </main> <footer class="footer"> <div class="container footer-inner"> <span>&copy; 2026 Ugur Tarlig</span> <div class="footer-links"> <a href="https://www.linkedin.com/in/tarlig" target="_blank" rel="noopener">LinkedIn</a> <a href="/imprint">Impressum</a> <a href="/privacy">Datenschutz</a> </div> </div> </footer> </body></html>
+<p>Nicht irgendwann.</p>
+<p>Jetzt.</p> </article>  </main> <footer class="footer"> <div class="container footer-inner"> <span>&copy; 2026 Ugur Tarlig</span> <div class="footer-links"> <a href="https://www.linkedin.com/in/tarlig" target="_blank" rel="noopener">LinkedIn</a> <a href="/imprint">Impressum</a> <a href="/privacy">Datenschutz</a> </div> </div> </footer> </body></html>
