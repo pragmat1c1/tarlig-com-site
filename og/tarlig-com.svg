@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Ugur Tarlig - AI Solutions Architect">
+  <rect width="1200" height="630" fill="#fbfaf7"/>
+  <rect x="72" y="72" width="1056" height="486" rx="18" fill="#ffffff" stroke="#e4ded2" stroke-width="2"/>
+  <circle cx="142" cy="142" r="34" fill="#171512"/>
+  <text x="142" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#fbfaf7">UT</text>
+  <text x="110" y="270" font-family="Georgia, serif" font-size="82" fill="#171512">AI Solutions Architect</text>
+  <text x="114" y="344" font-family="Arial, sans-serif" font-size="34" fill="#3c3832">Enterprise Architecture &amp; GenAI Platforms</text>
+  <text x="114" y="405" font-family="Arial, sans-serif" font-size="26" fill="#6f6a61">Regulated industries - Platform hardening - Executive delivery</text>
+  <path d="M836 168h144v86H836zM724 344h144v86H724zM946 344h144v86H946z" fill="#f4f0e8" stroke="#d8cfbf" stroke-width="2"/>
+  <path d="M908 254v45M796 344l88-90M1018 344l-88-90" fill="none" stroke="#0d6b5f" stroke-width="6" stroke-linecap="round"/>
+</svg>
