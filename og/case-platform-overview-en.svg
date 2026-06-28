@@ -47,10 +47,10 @@
 <text x="172.5" y="541" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="172.5" dy="0.0">Guides</tspan></text>
 <rect x="245" y="515" width="120" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
 <text x="305.0" y="541" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="305.0" dy="0.0">LOB apps</tspan></text>
-<!-- Crawlers: their own process block under the sources -->
-<rect x="80" y="592" width="400" height="98" rx="24" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
-<text x="120" y="623" font-size="22" font-weight="850" fill="#171512" text-anchor="start"><tspan x="120" dy="0.0">Crawlers</tspan></text>
-<text x="120" y="650" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="120" dy="0.0">Sync approved sources automatically</tspan><tspan x="120" dy="20.5">into the knowledge base.</tspan></text>
+<!-- Data pipeline: its own process block under the sources -->
+<rect x="80" y="614" width="400" height="98" rx="24" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="120" y="645" font-size="22" font-weight="850" fill="#171512" text-anchor="start"><tspan x="120" dy="0.0">Data pipeline</tspan></text>
+<text x="120" y="672" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="120" dy="0.0">Crawl approved sources and keep</tspan><tspan x="120" dy="20.5">the knowledge base current.</tspan></text>
 
 <!-- Center -->
 <text x="580" y="240" font-size="32" font-weight="880" fill="#171512" text-anchor="start"><tspan x="580" dy="0.0">Controlled AI layer</tspan></text>
@@ -87,7 +87,8 @@
 <text x="1184" y="567" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="1184" dy="0.0">Statements lead back</tspan><tspan x="1184" dy="20.5">to the original document.</tspan></text>
 
 <!-- Flow arrows -->
-<line x1="480" y1="641" x2="540" y2="641" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="280" y1="574" x2="280" y2="608" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="480" y1="663" x2="540" y2="663" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
 <line x1="1120" y1="425" x2="1060" y2="425" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
 <rect x="1030.0" y="377" width="120" height="34" rx="15" fill="#ffffff" stroke="#e4ded2" stroke-width="1" />
 <text x="1090.0" y="400" font-size="16" font-weight="750" fill="#6f6a61" text-anchor="middle"><tspan x="1090.0" dy="0.0">question</tspan></text>
