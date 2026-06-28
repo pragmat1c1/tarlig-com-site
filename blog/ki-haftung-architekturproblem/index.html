@@ -1,12 +1,9 @@
-<!DOCTYPE html><html lang="de"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>KI-Haftung ist ein Architekturproblem - Ugur Tarlig</title><meta name="description" content="Warum Chatbot-Output in kundennahen Prozessen nicht als Nebeneffekt behandelt werden darf: Ein Urteil des OLG Hamm zeigt, dass Guardrails, Quellenbindung, Human-in-the-loop, Traces und Evals nicht in Phase 2 gehören."><link rel="canonical" href="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><link rel="alternate" hreflang="de" href="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><link rel="alternate" hreflang="en" href="https://ugurtarlig.com/en/blog/ai-liability-is-an-architecture-problem"><link rel="alternate" hreflang="x-default" href="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="article"><meta property="og:title" content="KI-Haftung ist ein Architekturproblem - Ugur Tarlig"><meta property="og:description" content="Warum Chatbot-Output in kundennahen Prozessen nicht als Nebeneffekt behandelt werden darf: Ein Urteil des OLG Hamm zeigt, dass Guardrails, Quellenbindung, Human-in-the-loop, Traces und Evals nicht in Phase 2 gehören."><meta property="og:url" content="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><meta property="og:image" content="https://ugurtarlig.com/og/ki-haftung-architektur.webp"><meta property="og:locale" content="de_DE"><meta property="article:published_time" content="2026-06-28T00:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;adc780f5219047e2bd18241039012c00&quot;}"></script><link rel="stylesheet" href="/_astro/BaseLayout.B5aMFTLy.css"></head> <body> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="Ugur Tarlig Startseite"> <span class="brand-mark" aria-hidden="true">UT</span> <span class="brand-text">Ugur Tarlig</span> </a> <nav class="site-nav" aria-label="Hauptnavigation"> <a href="/#work">Arbeit</a><a href="/#track-record">Erfahrung</a><a href="/blog">Blog</a><a href="/#contact">Kontakt</a> <a class="lang-switch" href="/en/blog/ai-liability-is-an-architecture-problem" aria-label="Switch to English">English</a> </nav> </div> </header> <main>  <article class="container narrow-page"> <p class="eyebrow">28. Juni 2026</p> <h1>KI-Haftung ist ein Architekturproblem</h1> <img class="post-hero" src="/og/ki-haftung-architektur.webp" alt="" loading="eager"> <nav class="toc" aria-label="Inhalt"> <p class="toc-title">Inhalt</p> <ol> <li><a href="#der-falsche-reflex-disclaimer">Der falsche Reflex: Disclaimer</a></li><li><a href="#output-ist-kein-nebeneffekt-er-ist-systemverhalten">Output ist kein Nebeneffekt. Er ist Systemverhalten</a></li><li><a href="#fünf-bausteine-für-zurechenbaren-ki-output">Fünf Bausteine für zurechenbaren KI-Output</a></li><li><a href="#warum-das-in-regulierten-umfeldern-ab-tag-1-dazugehört">Warum das in regulierten Umfeldern ab Tag 1 dazugehört</a></li><li><a href="#die-modellfrage-ist-selten-die-wichtigste-frage">Die Modellfrage ist selten die wichtigste Frage</a></li><li><a href="#die-frage-vor-dem-go-live">Die Frage vor dem Go-live</a></li> </ol> </nav> <p>Ein Chatbot erfand Facharzttitel.</p>
-<p>Das klingt erst einmal wie ein typischer KI-Fehler: ein Modell halluziniert, ein System gibt eine falsche Antwort, irgendjemand ergänzt später einen Disclaimer.</p>
-<p>Das OLG Hamm hat den Fall anders behandelt.</p>
-<p>Ein Anbieter ästhetischer Behandlungen hatte auf seiner Website einen Chatbot eingesetzt. Nutzer konnten Fragen stellen und Termine buchen. Auf konkrete Fragen stellte der Bot die beiden Geschäftsführer als Fachärzte für bestimmte Bereiche der ästhetischen Medizin dar. Diese Qualifikationen hatten sie nicht. Zwei der genannten Titel existierten in dieser Form nicht einmal.</p>
-<p>Das Gericht wertete die Aussagen als irreführende geschäftliche Handlung. Entscheidend für die Architekturperspektive ist nicht nur das Ergebnis, sondern die Zurechnung: Der Chatbot wurde nicht als autonomer Dritter behandelt. Die Aussagen wurden dem Betreiber zugerechnet.</p>
-<p>Das Urteil ist noch nicht rechtskräftig. Die Revision zum BGH ist zugelassen. Es ist also kein endgültiger Schlusspunkt und schon gar kein neues allgemeines “KI-Haftungsgesetz”.</p>
-<p>Aber als Signal reicht es.</p>
-<p>Wer KI in kundennahen oder regulierten Prozessen nach außen sprechen lässt, muss damit rechnen, dass dieser Output nicht als bloßer Modellfehler behandelt wird. Er wird Teil der Unternehmenskommunikation, Teil des Prozesses, Teil des Risikos.</p>
-<p>Genau hier wird Haftung von einer Rechtsfrage zu einer Architekturfrage.</p>
+<!DOCTYPE html><html lang="de"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>KI-Haftung ist ein Architekturproblem - Ugur Tarlig</title><meta name="description" content="Warum Chatbot-Output in kundennahen Prozessen nicht als Nebeneffekt behandelt werden darf: Ein Urteil des OLG Hamm zeigt, dass Guardrails, Quellenbindung, Human-in-the-loop, Traces und Evals nicht in Phase 2 gehören."><link rel="canonical" href="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><link rel="alternate" hreflang="de" href="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><link rel="alternate" hreflang="en" href="https://ugurtarlig.com/en/blog/ai-liability-is-an-architecture-problem"><link rel="alternate" hreflang="x-default" href="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="article"><meta property="og:title" content="KI-Haftung ist ein Architekturproblem - Ugur Tarlig"><meta property="og:description" content="Warum Chatbot-Output in kundennahen Prozessen nicht als Nebeneffekt behandelt werden darf: Ein Urteil des OLG Hamm zeigt, dass Guardrails, Quellenbindung, Human-in-the-loop, Traces und Evals nicht in Phase 2 gehören."><meta property="og:url" content="https://ugurtarlig.com/blog/ki-haftung-architekturproblem"><meta property="og:image" content="https://ugurtarlig.com/og/ki-haftung-architektur.webp"><meta property="og:locale" content="de_DE"><meta property="article:published_time" content="2026-06-28T00:00:00.000Z"><meta name="twitter:card" content="summary_large_image"><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;adc780f5219047e2bd18241039012c00&quot;}"></script><link rel="stylesheet" href="/_astro/BaseLayout.gXtRluqt.css"></head> <body> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="/" aria-label="Ugur Tarlig Startseite"> <span class="brand-mark" aria-hidden="true">UT</span> <span class="brand-text">Ugur Tarlig</span> </a> <nav class="site-nav" aria-label="Hauptnavigation"> <a href="/#work">Arbeit</a><a href="/#track-record">Erfahrung</a><a href="/blog">Blog</a><a href="/#contact">Kontakt</a> <a class="lang-switch" href="/en/blog/ai-liability-is-an-architecture-problem" aria-label="Switch to English">English</a> </nav> </div> </header> <main>  <article class="container narrow-page"> <p class="eyebrow">28. Juni 2026</p> <h1>KI-Haftung ist ein Architekturproblem</h1> <img class="post-hero" src="/og/ki-haftung-architektur.webp" alt="" loading="eager"> <p>Ein Chatbot erfand Facharzttitel.</p>
+<p>Das klingt erst einmal wie ein typischer KI-Fehler: ein Modell halluziniert, ein System gibt eine falsche Antwort, irgendjemand ergänzt später einen Disclaimer. Das OLG Hamm hat den Fall anders behandelt.</p>
+<p>Ein Anbieter ästhetischer Behandlungen hatte auf seiner Website einen Chatbot eingesetzt. Nutzer konnten Fragen stellen und Termine buchen. Auf konkrete Fragen stellte der Bot die beiden Geschäftsführer als Fachärzte für bestimmte Bereiche der ästhetischen Medizin dar. Diese Qualifikationen hatten sie nicht, und zwei der genannten Titel existierten in dieser Form nicht einmal.</p>
+<p>Das Gericht wertete die Aussagen als irreführende geschäftliche Handlung. Entscheidend für die Architekturperspektive ist nicht nur das Ergebnis, sondern die Zurechnung: Der Chatbot wurde nicht als autonomer Dritter behandelt, die Aussagen wurden dem Betreiber zugerechnet. Das Urteil ist noch nicht rechtskräftig, die Revision zum BGH ist zugelassen. Es ist also kein endgültiger Schlusspunkt und schon gar kein neues allgemeines “KI-Haftungsgesetz”. Aber als Signal reicht es.</p>
+<p>Wer KI in kundennahen oder regulierten Prozessen nach außen sprechen lässt, muss damit rechnen, dass dieser Output nicht als bloßer Modellfehler behandelt wird. Er wird Teil der Unternehmenskommunikation, Teil des Prozesses, Teil des Risikos. Genau hier wird Haftung von einer Rechtsfrage zu einer Architekturfrage.</p>
+<nav class="toc" aria-label="Inhalt"><p class="toc-title">Inhalt</p><ol><li><a href="#der-falsche-reflex-disclaimer">Der falsche Reflex: Disclaimer</a></li><li><a href="#output-ist-kein-nebeneffekt-er-ist-systemverhalten">Output ist kein Nebeneffekt. Er ist Systemverhalten</a></li><li><a href="#fünf-bausteine-für-zurechenbaren-ki-output">Fünf Bausteine für zurechenbaren KI-Output</a></li><li><a href="#warum-das-in-regulierten-umfeldern-ab-tag-1-dazugehört">Warum das in regulierten Umfeldern ab Tag 1 dazugehört</a></li><li><a href="#die-modellfrage-ist-selten-die-wichtigste-frage">Die Modellfrage ist selten die wichtigste Frage</a></li><li><a href="#die-frage-vor-dem-go-live">Die Frage vor dem Go-live</a></li></ol></nav>
 <h2 id="der-falsche-reflex-disclaimer">Der falsche Reflex: Disclaimer</h2>
 <p>Der naheliegende Reflex ist ein Disclaimer.</p>
 <blockquote>
@@ -14,20 +11,14 @@
 <p>Bitte prüfen Sie die Angaben.</p>
 <p>Für die Richtigkeit übernehmen wir keine Gewähr.</p>
 </blockquote>
-<p>Solche Hinweise können sinnvoll sein. Aber sie lösen nicht das eigentliche Problem.</p>
-<p>Ein Disclaimer verhindert nicht, dass ein System eine falsche Qualifikation nennt. Er verhindert nicht, dass ein Nutzer die Aussage glaubt. Er verhindert nicht, dass ein Chatbot einen Termin, eine Empfehlung oder eine geschäftliche Aussage auslöst. Und er macht einen schlechten Prozess nicht kontrollierbar.</p>
+<p>Solche Hinweise können sinnvoll sein, aber sie lösen nicht das eigentliche Problem. Ein Disclaimer verhindert nicht, dass ein System eine falsche Qualifikation nennt. Er verhindert nicht, dass ein Nutzer die Aussage glaubt, dass ein Chatbot einen Termin, eine Empfehlung oder eine geschäftliche Aussage auslöst, und er macht einen schlechten Prozess nicht kontrollierbar.</p>
 <p>Ein Disclaimer ist Kommunikation.</p>
 <p>Ein Guardrail ist Architektur.</p>
-<p>Der Unterschied ist wichtig.</p>
-<p>Kommunikation sagt dem Nutzer, dass etwas schiefgehen kann. Architektur reduziert die Wahrscheinlichkeit, begrenzt den Schaden und macht nachvollziehbar, was passiert ist.</p>
-<p>In produktiven KI-Systemen braucht man beides. Aber wer den Disclaimer als Ersatz für System-Design behandelt, verschiebt Verantwortung an die falsche Stelle.</p>
+<p>Der Unterschied ist wichtig. Kommunikation sagt dem Nutzer, dass etwas schiefgehen kann. Architektur reduziert die Wahrscheinlichkeit, begrenzt den Schaden und macht nachvollziehbar, was passiert ist. In produktiven KI-Systemen braucht man beides, aber wer den Disclaimer als Ersatz für System-Design behandelt, verschiebt Verantwortung an die falsche Stelle.</p>
 <h2 id="output-ist-kein-nebeneffekt-er-ist-systemverhalten">Output ist kein Nebeneffekt. Er ist Systemverhalten</h2>
 <p>Viele KI-Piloten behandeln Output wie ein UI-Detail. Das Modell antwortet, der Nutzer sieht eine Box, vielleicht justiert man nach. Im Pilot trägt diese Haltung, weil der Kreis klein ist und niemand ernsthaft von der Antwort abhängt.</p>
-<p>In Produktion ändert sich die Rolle des Outputs. Er bereitet Entscheidungen vor, beeinflusst Kunden, erzeugt medizinische, rechtliche oder vertragliche Erwartungen, löst Aktionen aus. Je näher ein System an eine bindende Aussage oder folgenschwere Aktion rückt, desto weniger darf man sich auf “das Modell wird schon richtig antworten” verlassen.</p>
-<p>Dann ist Output kein Text mehr. Er ist Verhalten des Systems. Und Systemverhalten gehört in die Architektur.</p>
-<p>Damit verschiebt sich auch die zentrale Frage. Nicht: Welches Modell ist am besten? Sondern:</p>
-<p>Welcher Output darf in welchem Kontext das Haus verlassen?</p>
-<p>Aus dieser einen Frage folgen fast alle relevanten Architekturentscheidungen:</p>
+<p>In Produktion ändert sich die Rolle des Outputs. Er bereitet Entscheidungen vor, beeinflusst Kunden, erzeugt medizinische, rechtliche oder vertragliche Erwartungen, löst Aktionen aus. Je näher ein System an eine bindende Aussage oder folgenschwere Aktion rückt, desto weniger darf man sich auf “das Modell wird schon richtig antworten” verlassen. Dann ist Output kein Text mehr. Er ist Verhalten des Systems, und Systemverhalten gehört in die Architektur.</p>
+<p>Damit verschiebt sich auch die zentrale Frage. Nicht: Welches Modell ist am besten? Sondern: Welcher Output darf in welchem Kontext das Haus verlassen? Aus dieser einen Frage folgen fast alle relevanten Architekturentscheidungen:</p>
 <ul>
 <li>Welche Antworten dürfen direkt zum Nutzer?</li>
 <li>Welche Aussagen brauchen Quellen oder strukturierte Nachweise?</li>
@@ -36,14 +27,12 @@
 <li>Welche Rollen dürfen welche Daten sehen?</li>
 <li>Welche Entscheidung muss Monate später rekonstruierbar sein?</li>
 </ul>
-<p>Das sind keine juristischen Randnotizen. Das sind Designbedingungen.</p>
+<p>Das sind keine juristischen Randnotizen, sondern Designbedingungen.</p>
 <h2 id="fünf-bausteine-für-zurechenbaren-ki-output">Fünf Bausteine für zurechenbaren KI-Output</h2>
-<p>Wenn KI-Output einem Betreiber zugerechnet werden kann, muss die Architektur so gebaut sein, dass dieser Output kontrollierbar bleibt. Dafür braucht es keine perfekte, überkomplizierte Plattform. Aber ein paar Bausteine sollten vor dem Go-live vorhanden sein.</p>
+<p>Wenn KI-Output einem Betreiber zugerechnet werden kann, muss die Architektur so gebaut sein, dass dieser Output kontrollierbar bleibt. Dafür braucht es keine perfekte, überkomplizierte Plattform, aber ein paar Bausteine sollten vor dem Go-live vorhanden sein.</p>
 <h3 id="1-human-in-the-loop-bei-folgenreichen-aktionen">1. Human-in-the-loop bei folgenreichen Aktionen</h3>
-<p>Nicht jede Antwort braucht einen Menschen.</p>
-<p>Wenn ein interner Assistent eine Richtlinie zusammenfasst oder einen Entwurf erstellt, kann direkte Ausgabe sinnvoll sein. Aber wenn eine Antwort bindend wirkt, eine Zusage enthält, einen medizinischen Kontext berührt oder einen Prozess auslöst, muss die Architektur anders aussehen.</p>
-<p>Der Mensch sollte nicht überall in der Schleife hängen. Dann wird das System unbenutzbar.</p>
-<p>Aber bei folgenreichen Aktionen braucht es klare Schwellen:</p>
+<p>Nicht jede Antwort braucht einen Menschen. Wenn ein interner Assistent eine Richtlinie zusammenfasst oder einen Entwurf erstellt, kann direkte Ausgabe sinnvoll sein. Aber wenn eine Antwort bindend wirkt, eine Zusage enthält, einen medizinischen Kontext berührt oder einen Prozess auslöst, muss die Architektur anders aussehen.</p>
+<p>Der Mensch sollte nicht überall in der Schleife hängen, sonst wird das System unbenutzbar. Bei folgenreichen Aktionen aber braucht es klare Schwellen:</p>
 <ul>
 <li>Wann ist eine Antwort nur Information?</li>
 <li>Wann ist sie Empfehlung?</li>
@@ -52,8 +41,7 @@
 </ul>
 <p>Diese Übergänge müssen im System sichtbar sein. Sonst entscheidet das Modell implizit, wo eigentlich ein Prozessdesign entscheiden müsste.</p>
 <h3 id="2-output-guardrails-vor-dem-nutzer">2. Output-Guardrails vor dem Nutzer</h3>
-<p>Guardrails sind nicht nur Moderationsfilter.</p>
-<p>In produktiven Enterprise-Systemen prüfen sie, ob eine Antwort überhaupt die Regeln des Systems erfüllt.</p>
+<p>Guardrails sind nicht nur Moderationsfilter. In produktiven Enterprise-Systemen prüfen sie, ob eine Antwort überhaupt die Regeln des Systems erfüllt:</p>
 <ul>
 <li>Ist das Format korrekt?</li>
 <li>Wurden verbotene Claims gemacht?</li>
@@ -62,13 +50,9 @@
 <li>Wurde eine Quelle genannt, die den Satz tatsächlich stützt?</li>
 <li>Enthält die Antwort personenbezogene oder sensible Informationen, die dort nicht hingehören?</li>
 </ul>
-<p>Wichtig ist die Position im Ablauf: Guardrails müssen vor der Sichtbarkeit greifen, nicht erst nachträglich in einem Dashboard.</p>
-<p>Wenn der Nutzer die falsche Antwort schon gesehen hat, ist der Schaden nicht mehr nur technisch.</p>
+<p>Wichtig ist die Position im Ablauf: Guardrails müssen vor der Sichtbarkeit greifen, nicht erst nachträglich in einem Dashboard. Wenn der Nutzer die falsche Antwort schon gesehen hat, ist der Schaden nicht mehr nur technisch.</p>
 <h3 id="3-quellenbindung-statt-freier-behauptung">3. Quellenbindung statt freier Behauptung</h3>
-<p>Ein KI-System in einem regulierten Umfeld sollte nicht einfach “wissen”.</p>
-<p>Es sollte zeigen, worauf es sich stützt.</p>
-<p>Das klingt trivial, ist aber architektonisch anspruchsvoll. Eine Quellenangabe reicht nicht, wenn sie nur dekorativ ist. Die Antwort muss aus einem belastbaren Kontext kommen, und der Nutzer oder Prüfer muss nachvollziehen können, welcher Teil der Antwort durch welche Quelle gedeckt ist.</p>
-<p>Gerade bei RAG-Systemen ist das der Unterschied zwischen:</p>
+<p>Ein KI-System in einem regulierten Umfeld sollte nicht einfach “wissen”, sondern zeigen, worauf es sich stützt. Das klingt trivial, ist aber architektonisch anspruchsvoll. Eine Quellenangabe reicht nicht, wenn sie nur dekorativ ist. Die Antwort muss aus einem belastbaren Kontext kommen, und der Nutzer oder Prüfer muss nachvollziehen können, welcher Teil der Antwort durch welche Quelle gedeckt ist. Gerade bei RAG-Systemen ist das der Unterschied zwischen:</p>
 <blockquote>
 <p>Das System klingt plausibel.</p>
 </blockquote>
@@ -76,14 +60,12 @@
 <blockquote>
 <p>Das System kann belegen, warum es das gesagt hat.</p>
 </blockquote>
-<p>In der Praxis sehe ich zwei besonders tückische Fälle. Beide sind gefährlicher als die offensichtliche Halluzination, gerade weil die Antwort belegt aussieht.</p>
+<p>In der Praxis sehe ich zwei besonders tückische Fälle, beide gefährlicher als die offensichtliche Halluzination, gerade weil die Antwort belegt aussieht.</p>
 <p>Der erste Fall: Die Antwort trägt echte Quell-Links, stützt sich aber auf ungeeignete Dokumente. Ein typisches Muster sind Tabellen-Exporte. Beim Embedding verlieren sie ihre Struktur, und über zufällige Stichwort-Überschneidungen erzeugen sie plausible, aber irreführende Treffer. Dazu kommen Dokumente, die thematisch gar nicht in die Wissensbasis gehören und trotzdem mitindexiert wurden. Die Quellenangabe ist dann kein Beleg mehr, sondern Dekoration.</p>
 <p>Der zweite, subtilere Fall: Das System kombiniert Textstücke aus zwei realen Dokumenten zu einer Antwort, die wie ein drittes, in sich stimmiges Dokument klingt. Dieses Dokument hat es so nie gegeben. In einer Welt aus kontrollierten SOPs, in der genau eine Prozedur genau einem freigegebenen Dokument entspricht, ist das nicht nur ein Faktenfehler. Es ist eine Aussage, die im Dokumentenbestand gar nicht existiert und trotzdem zitierfähig aussieht.</p>
-<p>Beide Fälle führen zur selben Konsequenz. Quellenbindung muss auf der Ebene der einzelnen Aussage nachvollziehbar sein: Welcher Satz stützt sich auf welche Quelle? Ein dekorativer Link am Ende reicht nicht.</p>
-<p>Für interne Wissenssysteme ist das wichtig. Für kundennahen, medizinischen oder regulatorischen Output ist es zentral.</p>
+<p>Beide Fälle führen zur selben Konsequenz. Quellenbindung muss auf der Ebene der einzelnen Aussage nachvollziehbar sein: Welcher Satz stützt sich auf welche Quelle? Ein dekorativer Link am Ende reicht nicht. Für interne Wissenssysteme ist das wichtig, für kundennahen, medizinischen oder regulatorischen Output ist es zentral.</p>
 <h3 id="4-audit-traces-statt-chatverlauf">4. Audit-Traces statt Chatverlauf</h3>
-<p>Ein Chatverlauf ist keine Audit-Spur.</p>
-<p>Für produktive KI-Systeme reicht es nicht zu speichern, was der Nutzer gefragt und was das Modell geantwortet hat. Man muss rekonstruieren können, wie die Antwort entstanden ist.</p>
+<p>Ein Chatverlauf ist keine Audit-Spur. Für produktive KI-Systeme reicht es nicht zu speichern, was der Nutzer gefragt und was das Modell geantwortet hat. Man muss rekonstruieren können, wie die Antwort entstanden ist:</p>
 <ul>
 <li>Welche Version des Prompts wurde verwendet?</li>
 <li>Welches Modell?</li>
@@ -93,13 +75,9 @@
 <li>Welche Freigabe wurde erteilt?</li>
 <li>Welche Antwort wurde dem Nutzer tatsächlich angezeigt?</li>
 </ul>
-<p>Das klingt nach Betrieb und Compliance. Ist es auch.</p>
-<p>Aber vor allem ist es Engineering. Ohne solche Traces kann man Fehler nicht sauber analysieren, Systeme nicht verbessern und Streitfälle nicht nachvollziehen.</p>
+<p>Das klingt nach Betrieb und Compliance, und das ist es auch. Aber vor allem ist es Engineering. Ohne solche Traces kann man Fehler nicht sauber analysieren, Systeme nicht verbessern und Streitfälle nicht nachvollziehen.</p>
 <h3 id="5-evals-statt-hoffnung">5. Evals statt Hoffnung</h3>
-<p>Viele Teams testen KI-Systeme so, wie man Demos testet: ein paar Beispiele, ein paar gute Antworten, ein Gefühl von “funktioniert”.</p>
-<p>Das reicht nicht für Produktion.</p>
-<p>Evals sind keine akademische Übung. Sie sind die einzige belastbare Methode, um zu messen, wie oft ein System in relevanten Fällen falsch liegt.</p>
-<p>Besonders wichtig sind domänenspezifische Testfälle:</p>
+<p>Viele Teams testen KI-Systeme so, wie man Demos testet: ein paar Beispiele, ein paar gute Antworten, ein Gefühl von “funktioniert”. Das reicht nicht für Produktion. Evals sind keine akademische Übung, sondern die einzige belastbare Methode, um zu messen, wie oft ein System in relevanten Fällen falsch liegt. Besonders wichtig sind domänenspezifische Testfälle:</p>
 <ul>
 <li>typische Nutzerfragen</li>
 <li>missverständliche Formulierungen</li>
@@ -108,35 +86,14 @@
 <li>unvollständige Kontexte</li>
 <li>Anfragen, die an einen Menschen eskaliert werden müssen</li>
 </ul>
-<p>Ein gutes Eval-Set bildet nicht die einfachsten Fälle ab, sondern die Fälle, bei denen ein Fehler teuer wird.</p>
-<p>Wenn man das nicht selbst misst, misst es irgendwann jemand anderes: ein Kunde, ein Auditor, ein Gericht.</p>
+<p>Ein gutes Eval-Set bildet nicht die einfachsten Fälle ab, sondern die, bei denen ein Fehler teuer wird. Wenn man das nicht selbst misst, misst es irgendwann jemand anderes: ein Kunde, ein Auditor, ein Gericht.</p>
 <h2 id="warum-das-in-regulierten-umfeldern-ab-tag-1-dazugehört">Warum das in regulierten Umfeldern ab Tag 1 dazugehört</h2>
-<p>Ich arbeite seit fast zwei Jahren an KI-/GenAI-Systemen in einem regulierten Healthcare-Umfeld.</p>
-<p>Dort merkt man schnell: Compliance ist kein Feature, das man später ergänzt.</p>
-<p>Sie ist eine Designbedingung.</p>
-<p>Nicht, weil regulierte Organisationen innovationsfeindlich wären. Sondern weil dort die Folgen falscher Aussagen real sind. Ein System kann nicht nur falsch liegen. Es kann Vertrauen beschädigen, Prozesse verzerren oder Entscheidungen beeinflussen, die eigentlich kontrolliert bleiben müssen.</p>
-<p>Deshalb ist die Reihenfolge wichtig.</p>
-<p>Nicht:</p>
-<p>Erst Chatbot bauen, später Governance.</p>
-<p>Sondern:</p>
-<p>Erst klären, welcher Output erlaubt ist. Dann das System bauen.</p>
-<p>Das bedeutet nicht, dass alles langsam und bürokratisch werden muss. Im Gegenteil: Gute Architektur macht sichere Nutzung schneller, weil sie den Rahmen vorher klärt.</p>
-<p>Ein Team muss nicht bei jeder Antwort diskutieren, wenn das System bereits weiß:</p>
-<ul>
-<li>was es sagen darf</li>
-<li>was es belegen muss</li>
-<li>was es blockieren muss</li>
-<li>was es eskalieren muss</li>
-<li>was es protokollieren muss</li>
-</ul>
-<p>Das ist der Unterschied zwischen Governance als Bremse und Governance als Betriebssystem.</p>
+<p>Ich arbeite seit fast zwei Jahren an KI-/GenAI-Systemen in einem regulierten Healthcare-Umfeld. Dort merkt man schnell: Compliance ist kein Feature, das man später ergänzt, sondern eine Designbedingung. Nicht, weil regulierte Organisationen innovationsfeindlich wären, sondern weil dort die Folgen falscher Aussagen real sind. Ein System kann nicht nur falsch liegen. Es kann Vertrauen beschädigen, Prozesse verzerren oder Entscheidungen beeinflussen, die eigentlich kontrolliert bleiben müssen.</p>
+<p>Deshalb ist die Reihenfolge wichtig. Nicht: erst den Chatbot bauen, später die Governance. Sondern: erst klären, welcher Output erlaubt ist, dann das System bauen. Das bedeutet nicht, dass alles langsam und bürokratisch werden muss. Im Gegenteil: Gute Architektur macht sichere Nutzung schneller, weil sie den Rahmen vorher klärt.</p>
+<p>Ein Team muss nicht bei jeder Antwort diskutieren, wenn das System bereits weiß, was es sagen darf, was es belegen muss, was es blockieren muss, was es eskalieren muss und was es protokollieren muss. Das ist der Unterschied zwischen Governance als Bremse und Governance als Betriebssystem.</p>
 <h2 id="die-modellfrage-ist-selten-die-wichtigste-frage">Die Modellfrage ist selten die wichtigste Frage</h2>
-<p>Viele KI-Diskussionen starten beim Modell.</p>
-<p>Claude oder GPT? Cloud oder Open Weights? Frontier-Modell oder günstigeres Modell? RAG oder Agent?</p>
-<p>Diese Fragen sind relevant. Aber sie kommen zu früh, wenn die Output-Verantwortung nicht geklärt ist. Es ist dasselbe Muster, das ich <a href="/blog/agentic-ai-unternehmen-luecke">an anderer Stelle beschrieben habe</a>: Nicht das Modell ist der eigentliche Engpass, sondern Governance, Messbarkeit und kontrollierte Umsetzung.</p>
-<p>Ein stärkeres Modell löst keine unklare Verantwortlichkeit. Es ersetzt keine Freigabegrenzen. Es erzeugt keine Audit-Spur. Es entscheidet nicht, welche Aussage ein Unternehmen gegenüber einem Kunden vertreten will.</p>
-<p>Das Modell erzeugt Möglichkeiten.</p>
-<p>Die Architektur entscheidet, welche davon das System tatsächlich nutzen darf.</p>
+<p>Viele KI-Diskussionen starten beim Modell. Claude oder GPT? Cloud oder Open Weights? Frontier-Modell oder günstigeres Modell? RAG oder Agent? Diese Fragen sind relevant, aber sie kommen zu früh, wenn die Output-Verantwortung nicht geklärt ist. Es ist dasselbe Muster, das ich <a href="/blog/agentic-ai-unternehmen-luecke">an anderer Stelle beschrieben habe</a>: Nicht das Modell ist der eigentliche Engpass, sondern Governance, Messbarkeit und kontrollierte Umsetzung.</p>
+<p>Ein stärkeres Modell löst keine unklare Verantwortlichkeit. Es ersetzt keine Freigabegrenzen, erzeugt keine Audit-Spur und entscheidet nicht, welche Aussage ein Unternehmen gegenüber einem Kunden vertreten will. Das Modell erzeugt Möglichkeiten. Die Architektur entscheidet, welche davon das System tatsächlich nutzen darf.</p>
 <h2 id="die-frage-vor-dem-go-live">Die Frage vor dem Go-live</h2>
 <p>Der wichtigste Satz vor dem Go-live eines KI-Agenten lautet nicht:</p>
 <blockquote>
@@ -146,9 +103,6 @@
 <blockquote>
 <p>Was passiert, wenn das System in einem kritischen Fall falsch liegt?</p>
 </blockquote>
-<p>Wenn die Antwort darauf nur lautet “dann schreiben wir einen Disclaimer darunter”, ist das System nicht produktionsreif.</p>
-<p>Produktionsreif wird es erst, wenn Fehler erwartet, begrenzt, gemessen und nachvollziehbar gemacht werden.</p>
-<p>KI-Haftung ist deshalb nicht nur ein Rechtsthema.</p>
-<p>Sie ist eine Architekturanforderung.</p>
-<p>Und je näher KI-Systeme an echte Kunden, Patienten und Geschäftsprozesse rücken, desto weniger ist diese Anforderung optional.</p>
+<p>Wenn die Antwort darauf nur lautet “dann schreiben wir einen Disclaimer darunter”, ist das System nicht produktionsreif. Produktionsreif wird es erst, wenn Fehler erwartet, begrenzt, gemessen und nachvollziehbar gemacht werden.</p>
+<p>KI-Haftung ist deshalb nicht nur ein Rechtsthema. Sie ist eine Architekturanforderung. Und je näher KI-Systeme an echte Kunden, Patienten und Geschäftsprozesse rücken, desto weniger ist diese Anforderung optional.</p>
 <p>Quelle: <a href="https://www.justiz.nrw.de/presse/2026-05-12">OLG Hamm, Urteil vom 12.05.2026, Az. 4 UKl 3/25</a>.</p> </article>  </main> <footer class="footer"> <div class="container footer-inner"> <span>&copy; 2026 Ugur Tarlig</span> <div class="footer-links"> <a href="https://www.linkedin.com/in/tarlig" target="_blank" rel="noopener">LinkedIn</a> <a href="/imprint">Impressum</a> <a href="/privacy">Datenschutz</a> </div> </div> </footer> </body></html>
