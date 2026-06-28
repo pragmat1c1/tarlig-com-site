@@ -2,7 +2,7 @@
 A publicly shareable summary of platform work I owned internally:
       evaluation, enterprise hardening, and the production rollout of a GenAI
       assistant capability.
-</p> <img class="post-hero" src="/og/rag-aws-architecture.webp" width="1200" height="630" alt="Abstract RAG architecture on AWS with a crawler subsystem feeding multiple sources into a knowledge base" loading="eager"> <h2>Context</h2> <p>
+</p> <img class="post-hero" src="/og/rag-aws-architecture.webp" width="1200" height="630" alt="Abstract RAG architecture on AWS with a crawler subsystem feeding multiple sources into a knowledge base" loading="eager"> <nav class="toc" aria-label="Contents"><p class="toc-title">Contents</p><ol><li><a href="#context">Context</a></li><li><a href="#origin">How the project started</a></li><li><a href="#ownership">What I owned</a></li><li><a href="#architecture">Architecture overview</a></li><li><a href="#hardening">Enterprise hardening for a regulated environment</a></li><li><a href="#adoption">Adoption and rollout</a></li><li><a href="#handover">Secure handover</a></li><li><a href="#result">Result</a></li><li><a href="#role">Role</a></li></ol></nav> <h2 id="context">Context</h2> <p>
 As the internal lead for GenAI platform delivery in a regulated clinical
       environment, I owned the evaluation, enterprise hardening, and production
       rollout of a GenAI assistant platform end to end. This work sat at the
@@ -16,7 +16,7 @@ The approach followed a principle I hold generally: buy the engine, build the
       building blocks. The differentiating part was embedding it into a regulated
       enterprise: identity, data boundaries, security, knowledge integration, and
       rollout.
-</p> <h2>How the project started</h2> <p>
+</p> <h2 id="origin">How the project started</h2> <p>
 The platform originated in the context of innovation management, as one of
       several AI initiatives. I presented my concept to an innovation board of
       executives and senior management; it was selected as one of several AI use
@@ -31,7 +31,7 @@ The obvious route would have been a classic consulting project: a six-figure
       feedback, ownership over a requirements spec. That kept architecture and
       operations in-house and brought the platform into production at roughly 80
       percent below the originally estimated budget.
-</p> <h2>What I owned</h2> <ul> <li>Evaluation of the GenAI capability against concrete workflow and governance requirements.</li> <li>Architecture decisions, platform boundaries, integration points, and operational ownership.</li> <li>Enterprise hardening for security, identity, data handling, and observability.</li> <li>The rollout path from controlled introduction to broad organizational use.</li> </ul> <h2>Architecture overview</h2> <p>
+</p> <h2 id="ownership">What I owned</h2> <ul> <li>Evaluation of the GenAI capability against concrete workflow and governance requirements.</li> <li>Architecture decisions, platform boundaries, integration points, and operational ownership.</li> <li>Enterprise hardening for security, identity, data handling, and observability.</li> <li>The rollout path from controlled introduction to broad organizational use.</li> </ul> <h2 id="architecture">Architecture overview</h2> <p>
 The platform is a serverless three-tier architecture on AWS. It runs without
       its own servers, scales with load, and keeps operational overhead small. The
       building blocks below are deliberately at the architecture level, without
@@ -74,14 +74,14 @@ A WAF sits in front of the platform at CloudFront: an IP allowlist for
       10. Only approved networks reach the application. Sensitive configuration
       lives in Secrets Manager. Data boundaries, permissions, and logging are
       design constraints, not afterthoughts.
-</p> <h3>Data storage</h3> <ul> <li>DynamoDB for conversations, messages, and bot configurations (fast key-value access).</li> <li>OpenSearch Serverless for RAG vectors and a searchable bot store.</li> <li>S3 for the frontend and the raw documents of the knowledge base.</li> <li>Secrets Manager for credentials and keys.</li> </ul> <h2>Enterprise hardening for a regulated environment</h2> <p>
+</p> <h3>Data storage</h3> <ul> <li>DynamoDB for conversations, messages, and bot configurations (fast key-value access).</li> <li>OpenSearch Serverless for RAG vectors and a searchable bot store.</li> <li>S3 for the frontend and the raw documents of the knowledge base.</li> <li>Secrets Manager for credentials and keys.</li> </ul> <h2 id="hardening">Enterprise hardening for a regulated environment</h2> <p>
 In a regulated environment, compliance is not a feature you add later, but a
       design constraint from day 1. Concretely that meant: clear data boundaries and
       access roles, source grounding instead of free assertion, traceability of
       answers, logging and observability for usage and cost, and human control
       where output becomes consequential. These requirements shaped the
       architecture more than any model benchmark.
-</p> <h2>Adoption and rollout</h2> <p>
+</p> <h2 id="adoption">Adoption and rollout</h2> <p>
 A platform nobody uses has failed, no matter how cleanly it is built. The path
       led from a controlled introduction to around 750 active users, with a path
       toward a group-wide rollout to more than 18,000 employees. A bot marketplace
@@ -91,18 +91,18 @@ A platform nobody uses has failed, no matter how cleanly it is built. The path
       applications, plus a guided bot-creator for self-service. Usage analytics and
       role-based administration keep operations governable. Enablement, clear use
       cases, and support were part of the work, not an afterthought.
-</p> <h2>Secure handover</h2> <p>
+</p> <h2 id="handover">Secure handover</h2> <p>
 Production means the system keeps running even when I am no longer in the room.
       Over six months I handed the platform over in a structured way, with
       workshops, coaching, and hands-on sessions, to an internal team of two
       engineers and two business users plus an external service provider for ongoing
       operations. The goal was secure, self-sufficient platform operation without
       dependence on a single person.
-</p> <h2>Result</h2> <p>
+</p> <h2 id="result">Result</h2> <p>
 An AI ambition turned into an operated, governed, and genuinely used system.
       Delivered in-house, compliant from day 1, and on a stack that stays
       interchangeable: models can be swapped without rebuilding the platform.
-</p> <h2>Role</h2> <p>
+</p> <h2 id="role">Role</h2> <p>
 Solution architecture, decision frameworks, stakeholder alignment, and
       delivery, as the accountable internal lead, with hands-on technical judgment
       and executive context: enough detail to make the platform real, enough

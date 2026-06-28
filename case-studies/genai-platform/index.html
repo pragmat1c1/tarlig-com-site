@@ -2,7 +2,7 @@
 Eine öffentlich teilbare Zusammenfassung von Plattformarbeit, die ich
       intern verantwortet habe: Evaluation, Enterprise Hardening und produktive
       Einführung einer GenAI-Assistant-Fähigkeit.
-</p> <img class="post-hero" src="/og/rag-aws-architecture.webp" width="1200" height="630" alt="Abstrakte RAG-Architektur auf AWS mit Crawler-System, das mehrere Quellen in eine Wissensbasis speist" loading="eager"> <h2>Kontext</h2> <p>
+</p> <img class="post-hero" src="/og/rag-aws-architecture.webp" width="1200" height="630" alt="Abstrakte RAG-Architektur auf AWS mit Crawler-System, das mehrere Quellen in eine Wissensbasis speist" loading="eager"> <nav class="toc" aria-label="Inhalt"><p class="toc-title">Inhalt</p><ol><li><a href="#kontext">Kontext</a></li><li><a href="#entstehung">Wie das Projekt entstand</a></li><li><a href="#verantwortung">Was ich verantwortet habe</a></li><li><a href="#architektur">Architektur im Überblick</a></li><li><a href="#hardening">Enterprise-Hardening für ein reguliertes Umfeld</a></li><li><a href="#adoption">Adoption und Rollout</a></li><li><a href="#uebergabe">Sichere Übergabe</a></li><li><a href="#ergebnis">Ergebnis</a></li><li><a href="#rolle">Rolle</a></li></ol></nav> <h2 id="kontext">Kontext</h2> <p>
 Als interner Lead für GenAI Platform Delivery in einem regulierten
       klinischen Umfeld habe ich die Evaluation, das Enterprise-Hardening und die
       produktive Einführung einer GenAI-Assistant-Plattform end-to-end
@@ -17,7 +17,7 @@ Der Ansatz folgte einem Prinzip, das ich generell vertrete: die Engine
       gemanagten Bausteinen. Der differenzierende Teil war die Einbettung in ein
       reguliertes Unternehmen: Identität, Datengrenzen, Sicherheit,
       Wissensanbindung und Rollout.
-</p> <h2>Wie das Projekt entstand</h2> <p>
+</p> <h2 id="entstehung">Wie das Projekt entstand</h2> <p>
 Die Plattform entstand im Kontext des Innovationsmanagements, als eines von
       mehreren KI-Vorhaben. Ich habe mein Konzept vor einem Innovationsbeirat aus
       Vorständen und Geschäftsführung präsentiert; es wurde als einer von mehreren
@@ -33,7 +33,7 @@ Der naheliegende Weg wäre ein klassisches Beratungsprojekt gewesen:
       statt Lastenheft. Das hielt Architektur und Betrieb im Haus und brachte die
       Plattform rund 80 Prozent unter dem ursprünglich veranschlagten Budget in
       Produktion.
-</p> <h2>Was ich verantwortet habe</h2> <ul> <li>Evaluation der GenAI-Fähigkeit gegen konkrete Workflow- und Governance-Anforderungen.</li> <li>Architekturentscheidungen, Plattformgrenzen, Integrationspunkte und Betriebsverantwortung.</li> <li>Enterprise-Hardening für Security, Identität, Datenhandling und Observability.</li> <li>Den Rollout-Pfad von kontrollierter Einführung zu breiter organisatorischer Nutzung.</li> </ul> <h2>Architektur im Überblick</h2> <p>
+</p> <h2 id="verantwortung">Was ich verantwortet habe</h2> <ul> <li>Evaluation der GenAI-Fähigkeit gegen konkrete Workflow- und Governance-Anforderungen.</li> <li>Architekturentscheidungen, Plattformgrenzen, Integrationspunkte und Betriebsverantwortung.</li> <li>Enterprise-Hardening für Security, Identität, Datenhandling und Observability.</li> <li>Den Rollout-Pfad von kontrollierter Einführung zu breiter organisatorischer Nutzung.</li> </ul> <h2 id="architektur">Architektur im Überblick</h2> <p>
 Die Plattform ist eine serverlose Three-Tier-Architektur auf AWS. Sie kommt
       ohne eigene Server aus, skaliert nach Last und hält die Betriebslast klein.
       Die folgenden Bausteine bewusst auf Architekturebene, ohne interne Details.
@@ -77,7 +77,7 @@ Vor der Plattform sitzt eine WAF an CloudFront: IP-Allowlist für autorisierte
       freigegebene Netzwerke erreichen die Anwendung. Sensible Konfiguration liegt
       im Secrets Manager. Datengrenzen, Berechtigungen und Protokollierung sind
       Designbedingungen, keine Nachrüstung.
-</p> <h3>Datenhaltung</h3> <ul> <li>DynamoDB für Konversationen, Nachrichten und Bot-Konfigurationen (schnelle Key-Value-Zugriffe).</li> <li>OpenSearch Serverless für RAG-Vektoren und einen durchsuchbaren Bot-Store.</li> <li>S3 für das Frontend und für die Rohdokumente der Wissensbasis.</li> <li>Secrets Manager für Credentials und Schlüssel.</li> </ul> <h2>Enterprise-Hardening für ein reguliertes Umfeld</h2> <p>
+</p> <h3>Datenhaltung</h3> <ul> <li>DynamoDB für Konversationen, Nachrichten und Bot-Konfigurationen (schnelle Key-Value-Zugriffe).</li> <li>OpenSearch Serverless für RAG-Vektoren und einen durchsuchbaren Bot-Store.</li> <li>S3 für das Frontend und für die Rohdokumente der Wissensbasis.</li> <li>Secrets Manager für Credentials und Schlüssel.</li> </ul> <h2 id="hardening">Enterprise-Hardening für ein reguliertes Umfeld</h2> <p>
 In einem regulierten Umfeld ist Compliance kein Feature, das man später
       ergänzt, sondern eine Designbedingung ab Tag 1. Konkret hieß das: klare
       Datengrenzen und Zugriffsrollen, Quellenbindung statt freier Behauptung,
@@ -85,7 +85,7 @@ In einem regulierten Umfeld ist Compliance kein Feature, das man später
       Nutzung und Kosten, sowie menschliche Kontrolle dort, wo Output folgenreich
       wird. Diese Anforderungen haben die Architektur stärker geprägt als jeder
       Modell-Benchmark.
-</p> <h2>Adoption und Rollout</h2> <p>
+</p> <h2 id="adoption">Adoption und Rollout</h2> <p>
 Eine Plattform, die niemand nutzt, ist gescheitert, egal wie sauber sie
       gebaut ist. Der Weg führte von einer kontrollierten Einführung zu rund 750
       aktiven Nutzern, mit einem Pfad Richtung Konzern-Rollout an über 18.000
@@ -96,19 +96,19 @@ Eine Plattform, die niemand nutzt, ist gescheitert, egal wie sauber sie
       Bot-Creator für Self-Service. Nutzungs-Analytics und rollenbasierte
       Administration halten den Betrieb steuerbar. Enablement, klare Use Cases und
       Support waren Teil der Arbeit, nicht ein nachgelagerter Schritt.
-</p> <h2>Sichere Übergabe</h2> <p>
+</p> <h2 id="uebergabe">Sichere Übergabe</h2> <p>
 Produktion heißt: das System läuft auch dann, wenn ich nicht mehr im Raum
       bin. Über sechs Monate habe ich die Plattform strukturiert übergeben, mit
       Workshops, Coaching und Hands-on-Sessions, an ein internes
       Team aus zwei Technikern und zwei Fachanwendern sowie einen externen
       Dienstleister für den laufenden Betrieb. Ziel war ein sicherer,
       eigenständiger Plattformbetrieb ohne Abhängigkeit von einer einzelnen Person.
-</p> <h2>Ergebnis</h2> <p>
+</p> <h2 id="ergebnis">Ergebnis</h2> <p>
 Aus einer AI-Ambition wurde ein betriebenes, gesteuertes und tatsächlich
       genutztes System. In-house geliefert, compliant ab Tag 1, und auf einem Stack,
       der austauschbar bleibt: Modelle lassen sich wechseln, ohne die Plattform neu
       zu bauen.
-</p> <h2>Rolle</h2> <p>
+</p> <h2 id="rolle">Rolle</h2> <p>
 Solution Architecture, Entscheidungsrahmen, Stakeholder Alignment und
       Delivery, als verantwortlicher interner Lead, mit hands-on technischer
       Urteilskraft und Executive-Kontext: genug Detail, um die Plattform real zu
