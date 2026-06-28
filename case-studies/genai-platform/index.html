@@ -67,7 +67,7 @@ Ein zentraler Bestandteil war die Quellenbindung. Antworten sollten nicht
       die Plattform auf die zugrunde liegenden Originaldokumente. Gerade in einem
       regulierten Umfeld ist das kein Komfortmerkmal, sondern eine
       Grundanforderung.
-</p> <h2 id="architektur">Architektur im Überblick</h2> <p>
+</p> <figure class="post-figure"> <a class="post-figure-zoom" href="#fig-leistung"> <img src="/og/case-knowledge-assistants.webp" alt="Eine breite, gemeinsame Wissensbasis am Boden, von der dünne Linien zu mehreren unterschiedlichen Assistenten-Formen aufsteigen" loading="lazy"> </a> <figcaption>Eine gemeinsame, freigegebene Wissensbasis, darüber spezialisierte Assistenten je Anwendungsfall (zum Vergrößern klicken).</figcaption> <a class="lightbox" id="fig-leistung" href="#_" aria-label="Schließen"> <img src="/og/case-knowledge-assistants.webp" alt=""> </a> </figure> <h2 id="architektur">Architektur im Überblick</h2> <p>
 Die Plattform ist eine serverlose Three-Tier-Architektur auf AWS. Sie kommt
       ohne eigene Server aus, skaliert nach Last und hält die Betriebslast klein.
       Die folgenden Bausteine sind bewusst auf Architekturebene beschrieben, ohne
@@ -112,7 +112,7 @@ Die Plattform nutzt Retrieval Augmented Generation, kurz RAG. Antworten
       Quellenbindung kein Detail, sondern eine Architekturanforderung ist, habe
       ich
 <a href="/blog/ki-haftung-architekturproblem">an anderer Stelle beschrieben</a>.
-</p> <h3>Sicherheit und Datengrenzen</h3> <p>
+</p> <figure class="post-figure"> <a class="post-figure-zoom" href="#fig-pipeline"> <img src="/og/case-data-pipeline.webp" alt="Verstreute bunte Fragmente links laufen durch einen Trichter und werden rechts zu einem geordneten, gleichmäßigen Raster" loading="lazy"> </a> <figcaption>Die eigentliche Arbeit: verstreutes, unstrukturiertes Wissen wird zu einer sauberen, abfragbaren Wissensbasis. Das Modell ist 20 Prozent, die Datenpipeline 80 Prozent (zum Vergrößern klicken).</figcaption> <a class="lightbox" id="fig-pipeline" href="#_" aria-label="Schließen"> <img src="/og/case-data-pipeline.webp" alt=""> </a> </figure> <h3>Sicherheit und Datengrenzen</h3> <p>
 Vor der Plattform sitzt eine WAF an CloudFront: IP-Allowlist für autorisierte
       Netze, Rate-Limiting und gemanagte Regeln gegen die OWASP-Top-10. Nur
       freigegebene Netzwerke erreichen die Anwendung. Sensible Konfiguration liegt
@@ -131,7 +131,7 @@ In einem regulierten Umfeld reicht es nicht, ein leistungsfähiges Modell
       geprägt als jeder Modell-Benchmark. Die wichtigste Frage war nicht, welches
       Modell am beeindruckendsten ist, sondern welche Plattform in diesem Umfeld
       verantwortbar genutzt, betrieben und skaliert werden kann.
-</p> <h2 id="adoption">Adoption und Rollout</h2> <p>
+</p> <figure class="post-figure"> <a class="post-figure-zoom" href="#fig-hardening"> <img src="/og/case-hardening-layers.webp" alt="Ein solider Kern, umgeben von mehreren konzentrischen Schutzschichten, an denen Zugriffe von außen gefiltert stoppen" loading="lazy"> </a> <figcaption>Eine bewährte Engine im Kern, umgeben von gehärteten Schichten: Identität, Datengrenzen, Zugriff und Kontrolle (zum Vergrößern klicken).</figcaption> <a class="lightbox" id="fig-hardening" href="#_" aria-label="Schließen"> <img src="/og/case-hardening-layers.webp" alt=""> </a> </figure> <h2 id="adoption">Adoption und Rollout</h2> <p>
 Eine Plattform, die niemand nutzt, ist gescheitert, egal wie sauber sie
       gebaut ist. Deshalb war Adoption Teil der Delivery, nicht ein nachgelagerter
       Kommunikationsschritt. Der Weg führte von einer kontrollierten Einführung zu

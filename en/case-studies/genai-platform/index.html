@@ -61,7 +61,7 @@ Source grounding was a central element. Answers should not just sound
       convincing, they should be verifiable. That is why the platform points back
       to the underlying original documents. In a regulated environment in
       particular, that is not a comfort feature but a baseline requirement.
-</p> <h2 id="architecture">Architecture overview</h2> <p>
+</p> <figure class="post-figure"> <a class="post-figure-zoom" href="#fig-capability"> <img src="/og/case-knowledge-assistants.webp" alt="A broad shared knowledge base at the bottom, with thin lines rising to several distinct assistant shapes" loading="lazy"> </a> <figcaption>A single approved knowledge base, with specialized assistants on top, one per use case (click to enlarge).</figcaption> <a class="lightbox" id="fig-capability" href="#_" aria-label="Close"> <img src="/og/case-knowledge-assistants.webp" alt=""> </a> </figure> <h2 id="architecture">Architecture overview</h2> <p>
 The platform is a serverless three-tier architecture on AWS. It runs without
       its own servers, scales with load, and keeps operational overhead small. The
       building blocks below are deliberately at the architecture level, without
@@ -100,7 +100,7 @@ The platform uses Retrieval Augmented Generation, or RAG. Answers therefore
       project: the model is 20 percent of success, the data pipeline 80 percent.
       Why source grounding is not a detail but an architecture requirement, I have
 <a href="/en/blog/ai-liability-is-an-architecture-problem">described elsewhere</a>.
-</p> <h3>Security and data boundaries</h3> <p>
+</p> <figure class="post-figure"> <a class="post-figure-zoom" href="#fig-pipeline"> <img src="/og/case-data-pipeline.webp" alt="Scattered colored fragments on the left pass through a funnel and emerge as an ordered, even grid on the right" loading="lazy"> </a> <figcaption>The real work: scattered, unstructured knowledge becomes a clean, queryable knowledge base. The model is 20 percent, the data pipeline 80 percent (click to enlarge).</figcaption> <a class="lightbox" id="fig-pipeline" href="#_" aria-label="Close"> <img src="/og/case-data-pipeline.webp" alt=""> </a> </figure> <h3>Security and data boundaries</h3> <p>
 A WAF sits in front of the platform at CloudFront: an IP allowlist for
       authorized networks, rate limiting, and managed rules against the OWASP Top
       10. Only approved networks reach the application. Sensitive configuration
@@ -117,7 +117,7 @@ In a regulated environment, providing a capable model is not enough. What
       any model benchmark. The key question was not which model is most impressive,
       but which platform can be responsibly used, operated, and scaled in this
       environment.
-</p> <h2 id="adoption">Adoption and rollout</h2> <p>
+</p> <figure class="post-figure"> <a class="post-figure-zoom" href="#fig-hardening"> <img src="/og/case-hardening-layers.webp" alt="A solid core surrounded by several concentric protective layers where access from outside is filtered and stops" loading="lazy"> </a> <figcaption>A proven engine at the core, wrapped in hardened layers: identity, data boundaries, access, and control (click to enlarge).</figcaption> <a class="lightbox" id="fig-hardening" href="#_" aria-label="Close"> <img src="/og/case-hardening-layers.webp" alt=""> </a> </figure> <h2 id="adoption">Adoption and rollout</h2> <p>
 A platform nobody uses has failed, no matter how cleanly it is built. So
       adoption was part of delivery, not a downstream communication step. The path
       led from a controlled introduction to around 750 active users, with a path
