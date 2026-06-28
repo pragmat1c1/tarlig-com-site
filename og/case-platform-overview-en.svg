@@ -28,7 +28,7 @@
 <text x="82" y="118" font-size="22" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="82" dy="0.0">Approved sources in. A controlled AI layer in between. Traceable answers in daily work, out.</tspan></text>
 
 <!-- Cards -->
-<rect x="80" y="210" width="400" height="470" rx="30" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="80" y="210" width="400" height="372" rx="30" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
 <rect x="540" y="180" width="520" height="540" rx="34" fill="url(#platform)" stroke="#bcd9d2" stroke-width="2" filter="url(#shadow)"/>
 <rect x="1120" y="210" width="400" height="470" rx="30" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
 
@@ -47,8 +47,10 @@
 <text x="172.5" y="541" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="172.5" dy="0.0">Guides</tspan></text>
 <rect x="245" y="515" width="120" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
 <text x="305.0" y="541" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="305.0" dy="0.0">LOB apps</tspan></text>
-<rect x="120" y="600" width="330" height="48" rx="17" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
-<text x="285" y="631" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="285" dy="0.0">Crawlers keep the knowledge base current</tspan></text>
+<!-- Crawlers: their own process block under the sources -->
+<rect x="80" y="598" width="400" height="86" rx="24" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="120" y="633" font-size="22" font-weight="850" fill="#171512" text-anchor="start"><tspan x="120" dy="0.0">Crawlers</tspan></text>
+<text x="120" y="657" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="120" dy="0.0">Sync approved sources automatically</tspan><tspan x="120" dy="20.5">into the knowledge base.</tspan></text>
 
 <!-- Center -->
 <text x="580" y="240" font-size="32" font-weight="880" fill="#171512" text-anchor="start"><tspan x="580" dy="0.0">Controlled AI layer</tspan></text>
