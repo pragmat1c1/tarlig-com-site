@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Interne KI-Assistenzplattform für Unternehmenswissen</title>
+<desc id="desc">Blogdiagramm einer internen KI-Assistenzplattform: freigegebene Unternehmensquellen werden in eine kontrollierte KI-Schicht synchronisiert. Dort verbinden Governance, Datenpipeline, Wissensbasis, RAG und ein austauschbarer Modellbaustein die Quellen mit spezialisierten Assistenten. Mitarbeitende erhalten Antworten mit Quellenverweisen.</desc>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+    <path d="M2,2 L10,6 L2,10 Z" fill="#0d6b5f"/>
+  </marker>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#171512" flood-opacity="0.10"/>
+  </filter>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#fbfaf7"/>
+    <stop offset="100%" stop-color="#f3efe6"/>
+  </linearGradient>
+  <linearGradient id="platform" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#fbfaf7"/>
+  </linearGradient>
+  <style>
+    text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+  </style>
+</defs>
+
+<rect width="1600" height="900" fill="url(#bg)"/>
+
+<text x="80" y="78" font-size="42" font-weight="880" fill="#171512" text-anchor="start"><tspan x="80" dy="0.0">Interne KI-Assistenzplattform für Unternehmenswissen</tspan></text>
+<text x="82" y="118" font-size="22" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="82" dy="0.0">Freigegebene Quellen rein. Kontrollierte KI-Schicht dazwischen. Nachvollziehbare Antworten im Arbeitsalltag raus.</tspan></text>
+
+<!-- Cards -->
+<rect x="80" y="210" width="400" height="470" rx="30" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
+<rect x="540" y="180" width="520" height="540" rx="34" fill="url(#platform)" stroke="#bcd9d2" stroke-width="2" filter="url(#shadow)"/>
+<rect x="1120" y="210" width="400" height="470" rx="30" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
+
+<!-- Left -->
+<text x="120" y="270" font-size="30" font-weight="880" fill="#171512" text-anchor="start"><tspan x="120" dy="0.0">Freigegebene Quellen</tspan></text>
+<text x="120" y="310" font-size="19" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="120" dy="0.0">Verteiltes Unternehmenswissen,</tspan><tspan x="120" dy="24.3">das für die Plattform explizit</tspan><tspan x="120" dy="24.3">freigegeben wurde.</tspan></text>
+<rect x="120" y="395" width="140" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="190.0" y="421" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="190.0" dy="0.0">Intranet</tspan></text>
+<rect x="280" y="395" width="100" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="330.0" y="421" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="330.0" dy="0.0">QMS</tspan></text>
+<rect x="120" y="455" width="105" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="172.5" y="481" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="172.5" dy="0.0">SOPs</tspan></text>
+<rect x="245" y="455" width="105" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="297.5" y="481" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="297.5" dy="0.0">Wikis</tspan></text>
+<rect x="120" y="515" width="145" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="192.5" y="541" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="192.5" dy="0.0">Leitfäden</tspan></text>
+<rect x="285" y="515" width="165" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="367.5" y="541" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="367.5" dy="0.0">Fachanwendungen</tspan></text>
+<rect x="120" y="600" width="330" height="48" rx="17" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="285" y="631" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="285" dy="0.0">Crawler halten die Wissensbasis aktuell</tspan></text>
+
+<!-- Center -->
+<text x="580" y="240" font-size="32" font-weight="880" fill="#171512" text-anchor="start"><tspan x="580" dy="0.0">Kontrollierte KI-Schicht</tspan></text>
+<text x="580" y="278" font-size="18" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="580" dy="0.0">Hier entsteht der Enterprise-Wert:</tspan><tspan x="580" dy="23.0">Integration, Datenpipeline, Governance und Betrieb.</tspan></text>
+<rect x="580" y="340" width="440" height="74" rx="19" fill="#ffffff" stroke="#e4ded2" stroke-width="1.2" />
+<circle cx="614" cy="377" r="18" fill="#e3efec" stroke="#bcd9d2" stroke-width="1.1"/>
+<text x="614" y="384" font-size="16" font-weight="850" fill="#0d6b5f" text-anchor="middle"><tspan x="614" dy="0.0">1</tspan></text>
+<text x="644" y="373" font-size="21" font-weight="850" fill="#171512" text-anchor="start"><tspan x="644" dy="0.0">Governance zuerst</tspan></text>
+<text x="644" y="400" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="644" dy="0.0">SSO/OIDC · Rollen · Datengrenzen · Logging</tspan></text>
+<rect x="580" y="435" width="440" height="74" rx="19" fill="#ffffff" stroke="#e4ded2" stroke-width="1.2" />
+<circle cx="614" cy="472" r="18" fill="#e3efec" stroke="#bcd9d2" stroke-width="1.1"/>
+<text x="614" y="479" font-size="16" font-weight="850" fill="#0d6b5f" text-anchor="middle"><tspan x="614" dy="0.0">2</tspan></text>
+<text x="644" y="468" font-size="21" font-weight="850" fill="#171512" text-anchor="start"><tspan x="644" dy="0.0">Wissen aufbereiten</tspan></text>
+<text x="644" y="495" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="644" dy="0.0">Synchronisieren · Chunking · Embeddings</tspan></text>
+<rect x="580" y="530" width="440" height="74" rx="19" fill="#ffffff" stroke="#e4ded2" stroke-width="1.2" />
+<circle cx="614" cy="567" r="18" fill="#e3efec" stroke="#bcd9d2" stroke-width="1.1"/>
+<text x="614" y="574" font-size="16" font-weight="850" fill="#0d6b5f" text-anchor="middle"><tspan x="614" dy="0.0">3</tspan></text>
+<text x="644" y="563" font-size="21" font-weight="850" fill="#171512" text-anchor="start"><tspan x="644" dy="0.0">Kontext finden</tspan></text>
+<text x="644" y="590" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="644" dy="0.0">Vektorsuche auf freigegebenen Dokumenten</tspan></text>
+<rect x="580" y="625" width="440" height="74" rx="19" fill="#ffffff" stroke="#e4ded2" stroke-width="1.2" />
+<circle cx="614" cy="662" r="18" fill="#e3efec" stroke="#bcd9d2" stroke-width="1.1"/>
+<text x="614" y="669" font-size="16" font-weight="850" fill="#0d6b5f" text-anchor="middle"><tspan x="614" dy="0.0">4</tspan></text>
+<text x="644" y="658" font-size="21" font-weight="850" fill="#171512" text-anchor="start"><tspan x="644" dy="0.0">Antwort erzeugen</tspan></text>
+<text x="644" y="685" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="644" dy="0.0">RAG + austauschbarer Modell-Baustein</tspan></text>
+
+<!-- Right -->
+<text x="1160" y="270" font-size="30" font-weight="880" fill="#171512" text-anchor="start"><tspan x="1160" dy="0.0">Nutzung im Alltag</tspan></text>
+<text x="1160" y="310" font-size="19" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="1160" dy="0.0">Mitarbeitende nutzen spezialisierte</tspan><tspan x="1160" dy="24.3">Assistenten statt eines generischen</tspan><tspan x="1160" dy="24.3">Chatbots.</tspan></text>
+<rect x="1160" y="405" width="320" height="72" rx="20" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="1184" y="435" font-size="21" font-weight="850" fill="#171512" text-anchor="start"><tspan x="1184" dy="0.0">Bot-Marketplace</tspan></text>
+<text x="1184" y="462" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="1184" dy="0.0">Fachbereiche erstellen und teilen Bots</tspan></text>
+<rect x="1160" y="510" width="320" height="92" rx="20" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="1184" y="540" font-size="21" font-weight="850" fill="#171512" text-anchor="start"><tspan x="1184" dy="0.0">Antwort mit Quellen</tspan></text>
+<text x="1184" y="567" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="1184" dy="0.0">Aussagen führen zurück</tspan><tspan x="1184" dy="20.5">zum Originaldokument.</tspan></text>
+
+<!-- Flow arrows -->
+<line x1="480" y1="455" x2="540" y2="455" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="449.0" y="409" width="122" height="34" rx="15" fill="#ffffff" stroke="#e4ded2" stroke-width="1" />
+<text x="510.0" y="432" font-size="16" font-weight="750" fill="#6f6a61" text-anchor="middle"><tspan x="510.0" dy="0.0">indexieren</tspan></text>
+<line x1="1120" y1="425" x2="1060" y2="425" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1030.0" y="377" width="120" height="34" rx="15" fill="#ffffff" stroke="#e4ded2" stroke-width="1" />
+<text x="1090.0" y="400" font-size="16" font-weight="750" fill="#6f6a61" text-anchor="middle"><tspan x="1090.0" dy="0.0">Frage</tspan></text>
+<line x1="1060" y1="570" x2="1120" y2="570" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="997.5" y="584" width="185" height="34" rx="15" fill="#ffffff" stroke="#e4ded2" stroke-width="1" />
+<text x="1090.0" y="607" font-size="16" font-weight="750" fill="#6f6a61" text-anchor="middle"><tspan x="1090.0" dy="0.0">Antwort + Quellen</tspan></text>
+
+<!-- Bottom takeaway -->
+<rect x="80" y="765" width="1440" height="78" rx="26" fill="#ffffff" stroke="#e4ded2" stroke-width="1.5" filter="url(#shadow)"/>
+<text x="120" y="813" font-size="21" font-weight="880" fill="#171512" text-anchor="start"><tspan x="120" dy="0.0">Mehr als „GenAI“:</tspan></text>
+<rect x="335" y="788" width="155" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="412.5" y="814" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="412.5" dy="0.0">Quellenbindung</tspan></text>
+<rect x="510" y="788" width="95" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="557.5" y="814" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="557.5" dy="0.0">RBAC</tspan></text>
+<rect x="625" y="788" width="145" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="697.5" y="814" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="697.5" dy="0.0">Datengrenzen</tspan></text>
+<rect x="790" y="788" width="150" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="865.0" y="814" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="865.0" dy="0.0">Observability</tspan></text>
+<rect x="960" y="788" width="160" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="1040.0" y="814" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="1040.0" dy="0.0">Kostenkontrolle</tspan></text>
+<rect x="1140" y="788" width="135" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="1207.5" y="814" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="1207.5" dy="0.0">Self-Service</tspan></text>
+<rect x="1295" y="788" width="120" height="40" rx="18" fill="#f5f1e9" stroke="#e4ded2" stroke-width="1.1" />
+<text x="1355.0" y="814" font-size="16" font-weight="750" fill="#2c2823" text-anchor="middle"><tspan x="1355.0" dy="0.0">Übergabe</tspan></text>
+
+</svg>
