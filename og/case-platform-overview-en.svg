@@ -87,9 +87,7 @@
 <text x="1184" y="567" font-size="16" font-weight="420" fill="#6f6a61" text-anchor="start"><tspan x="1184" dy="0.0">Statements lead back</tspan><tspan x="1184" dy="20.5">to the original document.</tspan></text>
 
 <!-- Flow arrows -->
-<line x1="480" y1="455" x2="540" y2="455" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
-<rect x="449.0" y="409" width="122" height="34" rx="15" fill="#ffffff" stroke="#e4ded2" stroke-width="1" />
-<text x="510.0" y="432" font-size="16" font-weight="750" fill="#6f6a61" text-anchor="middle"><tspan x="510.0" dy="0.0">index</tspan></text>
+<line x1="480" y1="641" x2="540" y2="641" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
 <line x1="1120" y1="425" x2="1060" y2="425" stroke="#0d6b5f" stroke-width="3" marker-end="url(#arrow)"/>
 <rect x="1030.0" y="377" width="120" height="34" rx="15" fill="#ffffff" stroke="#e4ded2" stroke-width="1" />
 <text x="1090.0" y="400" font-size="16" font-weight="750" fill="#6f6a61" text-anchor="middle"><tspan x="1090.0" dy="0.0">question</tspan></text>
