@@ -4,7 +4,7 @@
     .sans { font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
     .serif { font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif; }
   </style>
-  <rect x="0" y="0" width="760" height="896" fill="#fbfaf7"/>
+  <rect x="0" y="0" width="760" height="896" fill="#ffffff"/>
 
   <text class="serif" x="380" y="46" text-anchor="middle" font-size="30" font-weight="700" fill="#171512">Der AI Act auf einen Blick</text>
   <text class="sans" x="380" y="76" text-anchor="middle" font-size="15" fill="#6f6a61">Risikostufen, Pflichten, Fristen · Stand nach dem Digital Omnibus, Juli 2026</text>
