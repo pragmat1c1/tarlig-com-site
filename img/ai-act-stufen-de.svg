@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 896" role="img" aria-labelledby="aiact-title">
+  <title id="aiact-title">Der AI Act auf einen Blick: vier Risikostufen und ihre Fristen nach dem Digital Omnibus</title>
+  <style>
+    .sans { font-family: -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .serif { font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif; }
+  </style>
+  <rect x="0" y="0" width="760" height="896" fill="#fbfaf7"/>
+
+  <text class="serif" x="380" y="46" text-anchor="middle" font-size="30" font-weight="700" fill="#171512">Der AI Act auf einen Blick</text>
+  <text class="sans" x="380" y="76" text-anchor="middle" font-size="15" fill="#6f6a61">Risikostufen, Pflichten, Fristen · Stand nach dem Digital Omnibus, Juli 2026</text>
+
+  <!-- Stufe 1: Verboten -->
+  <rect x="120" y="100" width="520" height="86" rx="10" fill="#b55e42"/>
+  <text class="sans" x="140" y="136" font-size="20" font-weight="700" fill="#ffffff">Unannehmbares Risiko: verboten</text>
+  <text class="sans" x="140" y="163" font-size="15.5" fill="#ffffff" opacity="0.92">Social Scoring, manipulative Systeme</text>
+  <text class="sans" x="620" y="136" text-anchor="end" font-size="16" font-weight="700" fill="#ffffff">seit Feb 2025</text>
+
+  <!-- Stufe 2: Hochrisiko (vom Omnibus verschoben) -->
+  <text class="sans" x="690" y="216" text-anchor="end" font-size="15" font-style="italic" fill="#b55e42">vom Omnibus verschoben</text>
+  <rect x="64" y="224" width="632" height="262" rx="14" fill="none" stroke="#b55e42" stroke-width="3" stroke-dasharray="10 7"/>
+  <rect x="70" y="230" width="620" height="250" rx="10" fill="#0d6b5f"/>
+  <text class="sans" x="90" y="264" font-size="20" font-weight="700" fill="#ffffff">Hohes Risiko: strenge Pflichten</text>
+  <rect x="90" y="282" width="580" height="82" rx="8" fill="#ffffff" opacity="0.13"/>
+  <text class="sans" x="106" y="312" font-size="17.5" font-weight="700" fill="#ffffff">Eigenständige Systeme (Annex III)</text>
+  <text class="sans" x="106" y="338" font-size="15" fill="#ffffff" opacity="0.9">Bewerbungen, Kredite, Behörden</text>
+  <text class="sans" x="654" y="312" text-anchor="end" font-size="15" fill="#ffffff" text-decoration="line-through" opacity="0.65">2. Aug 2026</text>
+  <text class="sans" x="654" y="338" text-anchor="end" font-size="17" font-weight="700" fill="#ffffff">→ 2. Dez 2027</text>
+  <rect x="90" y="376" width="580" height="82" rx="8" fill="#ffffff" opacity="0.13"/>
+  <text class="sans" x="106" y="406" font-size="17.5" font-weight="700" fill="#ffffff">In regulierten Produkten (Annex I)</text>
+  <text class="sans" x="106" y="432" font-size="15" fill="#ffffff" opacity="0.9">z. B. Medizinprodukte, Maschinen</text>
+  <text class="sans" x="654" y="406" text-anchor="end" font-size="15" fill="#ffffff" text-decoration="line-through" opacity="0.65">2. Aug 2027</text>
+  <text class="sans" x="654" y="432" text-anchor="end" font-size="17" font-weight="700" fill="#ffffff">→ 2. Aug 2028</text>
+
+  <!-- Stufe 3: Transparenz -->
+  <rect x="40" y="510" width="680" height="86" rx="10" fill="#d9e6df"/>
+  <text class="sans" x="60" y="546" font-size="20" font-weight="700" fill="#171512">Begrenztes Risiko: Transparenz</text>
+  <text class="sans" x="60" y="573" font-size="15.5" fill="#6f6a61">Chatbots offenlegen, Deepfakes und KI-Inhalte kennzeichnen</text>
+  <text class="sans" x="700" y="546" text-anchor="end" font-size="16" font-weight="700" fill="#084a42">ab 2. Aug 2026</text>
+  <text class="sans" x="700" y="573" text-anchor="end" font-size="14" fill="#6f6a61">unverändert</text>
+
+  <!-- Stufe 4: Minimal -->
+  <rect x="20" y="616" width="720" height="84" rx="10" fill="#f1eee6" stroke="#e4ded2" stroke-width="1.5"/>
+  <text class="sans" x="40" y="651" font-size="20" font-weight="700" fill="#171512">Minimales Risiko: keine besonderen Pflichten</text>
+  <text class="sans" x="40" y="678" font-size="15.5" fill="#6f6a61">Spamfilter, Empfehlungssysteme, die meisten Alltagsanwendungen</text>
+
+  <!-- GPAI -->
+  <rect x="20" y="720" width="720" height="90" rx="10" fill="none" stroke="#e4ded2" stroke-width="1.5"/>
+  <text class="sans" x="40" y="754" font-size="17" font-weight="700" fill="#171512">Quer zu den Stufen: Pflichten für Basismodell-Anbieter (GPAI)</text>
+  <text class="sans" x="40" y="781" font-size="15" fill="#6f6a61">Transparenz, Urheberrecht, Sicherheitsberichte · seit Aug 2025 · unverändert</text>
+
+  <!-- Legende + Quelle -->
+  <rect x="40" y="834" width="42" height="22" rx="6" fill="none" stroke="#b55e42" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <text class="sans" x="96" y="850" font-size="15" fill="#171512">vom Digital Omnibus verschoben (alte Frist durchgestrichen)</text>
+  <text class="sans" x="740" y="882" text-anchor="end" font-size="13.5" fill="#6f6a61">Quelle: Digital Omnibus, PE 30/2026</text>
+</svg>
