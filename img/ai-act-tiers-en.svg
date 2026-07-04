@@ -34,7 +34,7 @@
   <!-- Tier 3: Transparency -->
   <rect x="40" y="510" width="680" height="86" rx="10" fill="#d9e6df"/>
   <text class="sans" x="60" y="546" font-size="20" font-weight="700" fill="#171512">Limited risk: transparency</text>
-  <text class="sans" x="60" y="573" font-size="15.5" fill="#6f6a61">Disclose chatbots, label deepfakes and AI content</text>
+  <text class="sans" x="60" y="573" font-size="15.5" fill="#6f6a61">Art. 50: disclose chatbots, label deepfakes/AI content</text>
   <text class="sans" x="700" y="546" text-anchor="end" font-size="16" font-weight="700" fill="#084a42">from Aug 2, 2026</text>
   <text class="sans" x="700" y="573" text-anchor="end" font-size="14" fill="#6f6a61">unchanged</text>
 

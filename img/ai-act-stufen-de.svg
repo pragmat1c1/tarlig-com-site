@@ -34,7 +34,7 @@
   <!-- Stufe 3: Transparenz -->
   <rect x="40" y="510" width="680" height="86" rx="10" fill="#d9e6df"/>
   <text class="sans" x="60" y="546" font-size="20" font-weight="700" fill="#171512">Begrenztes Risiko: Transparenz</text>
-  <text class="sans" x="60" y="573" font-size="15.5" fill="#6f6a61">Chatbots offenlegen, Deepfakes und KI-Inhalte kennzeichnen</text>
+  <text class="sans" x="60" y="573" font-size="15.5" fill="#6f6a61">Art. 50: Chatbots offenlegen, Deepfakes/KI-Inhalte kennzeichnen</text>
   <text class="sans" x="700" y="546" text-anchor="end" font-size="16" font-weight="700" fill="#084a42">ab 2. Aug 2026</text>
   <text class="sans" x="700" y="573" text-anchor="end" font-size="14" fill="#6f6a61">unverändert</text>
 
